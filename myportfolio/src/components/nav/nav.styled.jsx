@@ -7,7 +7,8 @@ height:80px;
 /* border:1px solid red; */
 position:sticky;
 top:0px;
-background:whitesmoke;
+background:${props => props.theme == "light" ? "#282c7d" : "whitesmoke"};
+color:${props => props.theme == "dark" ? "#282c7d" : "whitesmoke"};
 margin:0;
 padding:0;
 display: flex;
@@ -62,4 +63,24 @@ padding:20px 5px;
 gap:20px;
 justify-content: right;
 box-sizing: border-box;
+border:2px solid red
+`
+export const LightDiv = styled.div`
+margin: 0px 20px;
+padding:20px 5px;
+gap:20px;
+justify-content: right;
+box-sizing: border-box;
+border:2px solid red;
+display:${props=>props.theme=="dark"?"none":"block"};
+`
+export const DarkDiv = styled.div`
+margin: 0px 20px;
+padding:20px 5px;
+gap:20px;
+justify-content: right;
+box-sizing: border-box;
+border:2px solid red;
+display:${props=>props.theme=="light"?"none":"block"};
+
 `
