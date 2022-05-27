@@ -1,0 +1,72 @@
+import React, { useContext, useState, useRef } from "react";
+import { ThemeContext } from "../../context/themeContext";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import {
+  ContactsDiv,
+  H1tag,
+  EmailDiv,
+  MobDiv,
+  MediumDiv,
+  MediumImg,
+  MediumDiv2,
+} from "./contact.styled";
+import { requirePropFactory } from "@mui/material";
+function Contact() {
+  const { theme } = useContext(ThemeContext);
+
+  function copyToClipboard() {
+    toast.info("Email copied to clipboard");
+  }
+
+  return (
+    <>
+      <ContactsDiv theme={theme}>
+              <H1tag>Contact</H1tag>
+              {/* div containing all the elements other than Heading */}
+              <div style={{ marginBottom: "50px ", display: "flex", margin: "auto", width: "80%" , justifyContent:"space-between"}}>
+                  {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard for alert from toastify ,
+                  copyToClipboard is a function for triggering toast ;ContentCopyIcon from Material ui */}
+          <EmailDiv>
+            <ToastContainer />
+            <div>
+              <p>affanahmad2797@gmail.com </p>
+            </div>
+            <CopyToClipboard text="affanahmad2797@gmail.com">
+              <ContentCopyIcon
+                value="affanahmad2797@gmail.com"
+                onClick={copyToClipboard}
+              >
+                Copy{" "}
+              </ContentCopyIcon>
+            </CopyToClipboard>
+                  </EmailDiv>
+                  {/* Mobdiv from styled component */}
+          <MobDiv>
+            <p>+91 8700171723</p>
+                  </MobDiv>
+                  {/* div containing icons for social media platforms; LinkedInIcon,GitHubIcon from Material ui;
+                    MediumDiv,MediumDiv2,MediumImg from styled components;
+                    MediumDiv and MediumDiv2 are used to toggle between two logo images as Medium's icon was not available
+                    on Material ui*/}
+          <div style={{ display: "flex" }}>
+            <LinkedInIcon />
+            <GitHubIcon />
+            <MediumDiv theme={theme}>
+              <MediumImg src="https://miro.medium.com/max/1400/1*psYl0y9DUzZWtHzFJLIvTw.png" />
+            </MediumDiv>
+            <MediumDiv2 theme={theme}>
+              <MediumImg src={require("./Medium.jpg")} />
+            </MediumDiv2>
+          </div>
+        </div>
+      </ContactsDiv>
+    </>
+  );
+}
+
+export default Contact;

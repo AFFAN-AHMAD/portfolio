@@ -35,7 +35,7 @@ function Skills() {
         <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/ps_black_128.svg" width="48" height="48" alt="Powershell" />
                   </a>
                   <a href=""  >
-        <img style={{background:"white"}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="48" height="48" alt="bash" />
+        <img style={{background:"whitesmoke"}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="48" height="48" alt="bash" />
       </a>
               </p>
 </div>

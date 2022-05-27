@@ -7,10 +7,11 @@ height:80px;
 /* border:1px solid red; */
 position:sticky;
 top:0px;
-background:${props => props.theme == "light" ? "#282c7d" : "whitesmoke"};
-color:${props => props.theme == "dark" ? "#282c7d" : "whitesmoke"};
+background:${props => props.theme == "light" ? "#10101a" : "whitesmoke"};
+color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 margin:0;
 padding:0;
+z-index:1;
 display: flex;
 box-sizing: border-box;
 box-shadow: 2px 2px 5px 10px darkgray;

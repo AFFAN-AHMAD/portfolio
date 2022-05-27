@@ -8,17 +8,19 @@ export const LinkProvider = ({ children }) => {
 
     const handleHover1 = () => {
         setToshow1(toshow1 == true ? false : true)
-console.log(toshow1)      
+        console.log("1",toshow1)
+
     }
 
 
     const handleHover2 = () => {
         setToshow2(toshow2 == true ? false : true)
-console.log(toshow2)      
+        console.log("2",toshow2)
     }
     const handleHover = () => {
         setToshow(toshow == true ? false : true)
-console.log(toshow)      
+        console.log("3",toshow)
+
     }
     return (
         <LinkContext.Provider value={{ handleHover,handleHover1,handleHover2,toshow1,toshow2,toshow}}>

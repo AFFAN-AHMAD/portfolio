@@ -11,6 +11,7 @@ function Nav() {
         <NameDiv>
             Affan Ahmad
         </NameDiv>
+        <div><h5>Download CV</h5> </div>
         <TagsDiv>
           <a>home</a>
           <a>about</a>
