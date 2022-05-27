@@ -1,7 +1,6 @@
+import styled from "styled-components"
 
-import styled from "styled-components";
-
-export const AboutDiv = styled.div`
+export const SkillsDiv = styled.div`
 width:100%;
 height:auto;
 background:${props => props.theme == "light" ? "#282c7d" : "whitesmoke"};

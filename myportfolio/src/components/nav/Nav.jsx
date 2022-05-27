@@ -13,9 +13,9 @@ function Nav() {
         </NameDiv>
         <TagsDiv>
           <a>home</a>
+          <a>about</a>
           <a>skills</a>
           <a>projects</a>
-          <a>about</a>
           <a>contact</a>
         </TagsDiv>
         <div>

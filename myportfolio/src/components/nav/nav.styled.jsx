@@ -14,7 +14,7 @@ padding:0;
 display: flex;
 box-sizing: border-box;
 box-shadow: 2px 2px 5px 10px darkgray;
-@media all and  (max-width:795px) {
+@media all and  (max-width:870px) {
 /* border:1px solid red; */
 height:150px;
 }
@@ -63,7 +63,7 @@ padding:20px 5px;
 gap:20px;
 justify-content: right;
 box-sizing: border-box;
-border:2px solid red
+/* border:2px solid red */
 `
 export const LightDiv = styled.div`
 margin: 0px 20px;
@@ -71,7 +71,7 @@ padding:20px 5px;
 gap:20px;
 justify-content: right;
 box-sizing: border-box;
-border:2px solid red;
+/* border:2px solid red; */
 display:${props=>props.theme=="dark"?"none":"block"};
 `
 export const DarkDiv = styled.div`
@@ -80,7 +80,7 @@ padding:20px 5px;
 gap:20px;
 justify-content: right;
 box-sizing: border-box;
-border:2px solid red;
+/* border:2px solid red; */
 display:${props=>props.theme=="light"?"none":"block"};
 
 `
