@@ -42,10 +42,11 @@ position:sticky;
 `
 export const DescDiv = styled.div`
 /* height:200px; */
-width:100%;
+width:90%;
 box-sizing: border-box;
 overflow: scroll;
 text-align: left;
+margin:auto;
 height:${props => props.show == true ? "260px" : "200px"};
 &::-webkit-scrollbar {
     display:none ;

@@ -47,6 +47,7 @@ function Projects() {
               <li>Creation of Women's Product Page</li>
               <li>Creation of Women's Product Detail's page</li>
             </ul>
+            <p> Team of 3 members,executed it in 6 days.</p>
           </DescDiv>
           <LinkDiv show={toshow1}>
             <p style={{ textAlign: "center",color:"whitesmoke" }}>
@@ -83,7 +84,7 @@ function Projects() {
           <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      NykaaMan</h5>
           </NameDiv>
           <DescDiv show={toshow2}>
-            <p>NykaMan is an e-commerce website that deals in grooming and makeup products exclusively for men. Our team has cloned this website within a period of 5 days.</p>
+            <p>NykaaMan is an e-commerce website that deals in grooming and makeup products exclusively for men. Our team has cloned this website within a period of 5 days.</p>
             <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
             <li>Sign-in/Sign-up</li>
             <li>Cart | Products page | Products details page</li>
@@ -94,6 +95,8 @@ function Projects() {
             <li>created a sticky Navbar and imported it into all the pages</li>
             <li>Created Cart page</li>
             </ul>
+            <p> Team of 5 members,executed it in 6 days.</p>
+
           </DescDiv>
           <LinkDiv show={toshow2}>
           <p style={{ textAlign: "center",color:"whitesmoke" }}>
@@ -144,6 +147,8 @@ function Projects() {
               <li>Provided assistance to teammates</li>
               <li>Developed product page functionalities for the sorting of products</li>
             </ul>
+            <p> Team of 6 members,executed it in 5 days.</p>
+
           </DescDiv>
           <LinkDiv show={toshow}>
           <p style={{ textAlign: "center",color:"whitesmoke" }}>
