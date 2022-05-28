@@ -49,7 +49,7 @@ function Projects() {
             </ul>
           </DescDiv>
           <LinkDiv show={toshow1}>
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center",color:"whitesmoke" }}>
               {" "}
               Live{" "}
               <Atag
@@ -60,7 +60,7 @@ function Projects() {
                 <OpenInNewIcon style={{ fontSize: "medium" }} />
               </Atag>{" "}
             </p>
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center", color:"whitesmoke" }}>
               {" "}
               Github{" "}
               <Atag
@@ -96,7 +96,7 @@ function Projects() {
             </ul>
           </DescDiv>
           <LinkDiv show={toshow2}>
-            <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center",color:"whitesmoke" }}>
               {" "}
               Live{" "}
               <Atag
@@ -108,7 +108,7 @@ function Projects() {
                 <OpenInNewIcon style={{ fontSize: "medium" }} />
               </Atag>
             </p>
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center",color:"whitesmoke" }}>
               {" "}
               Github{" "}
               <Atag
@@ -128,10 +128,25 @@ function Projects() {
         <ImgDiv></ImgDiv>
         <DetailsDiv>
           <NameDiv>
-          <p >Tata 1mg</p>
+          Tata 1mg
           </NameDiv>
+          <DescDiv show={toshow}>
+            <p>It is a web application for medicinal and other health products.</p>
+            <ul> <h5>Features:</h5>
+            <li>Sign-in/Sign-up</li>
+            <li>Cart | Products page | Products details page</li>
+            <li>User authentication</li>
+            </ul>
+            <ul> <h5>Areas of responsibility:</h5>
+              <li>Laid out the plan for the team members and distributed the work among us</li>
+              <li>Created Home page</li>
+          <li>Collected the data and created the stack of the data</li>
+              <li>Provided assistance to teammates</li>
+              <li>Developed product page functionalities for the sorting of products</li>
+            </ul>
+          </DescDiv>
           <LinkDiv show={toshow}>
-            <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center",color:"whitesmoke" }}>
               {" "}
               Live{" "}
               <Atag
@@ -143,7 +158,7 @@ function Projects() {
                 <OpenInNewIcon style={{ fontSize: "medium" }} />
               </Atag>
             </p>
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center",color:"whitesmoke" }}>
               {" "}
               Github{" "}
               <Atag

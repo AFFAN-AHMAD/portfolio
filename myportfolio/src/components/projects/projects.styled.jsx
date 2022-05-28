@@ -81,4 +81,5 @@ border:1px solid red;
 `
 export const Atag = styled.a`
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+color:whitesmoke
 `
