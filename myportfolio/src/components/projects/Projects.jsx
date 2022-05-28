@@ -30,18 +30,18 @@ function Projects() {
         </ImgDiv>
         <DetailsDiv>
           <NameDiv>
-        Myntra
+  <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      Myntra</h5>
           </NameDiv>
           <DescDiv show={toshow1}>
           <p>Myntra is a leading e-commerce website of India.</p>
-          <ul> <h5>Features:</h5>
+          <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
             <li>Sign-in/Sign-up</li>
             <li>Cart | Products page | Products details page</li>
             <li>User authentication</li>
             {/* <li></li> */}
             </ul>
             
-            <ul> <h5>Areas of responsibility:</h5>
+            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Areas of responsibility:</h5>
               <li>Creation of Men's Product Page</li>
               <li>Creation of Men's Product Details Page</li>
               <li>Creation of Women's Product Page</li>
@@ -80,16 +80,16 @@ function Projects() {
         <ImgDiv></ImgDiv>
         <DetailsDiv>
           <NameDiv>
-          Nykaa
+          <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      NykaaMan</h5>
           </NameDiv>
           <DescDiv show={toshow2}>
             <p>NykaMan is an e-commerce website that deals in grooming and makeup products exclusively for men. Our team has cloned this website within a period of 5 days.</p>
-            <ul> <h5>Features:</h5>
+            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
             <li>Sign-in/Sign-up</li>
             <li>Cart | Products page | Products details page</li>
             <li>User authentication</li>
             </ul>
-            <ul> <h5>Areas of responsibility:</h5>
+            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Areas of responsibility:</h5>
             <li>Responsible for the UI of the website</li>
             <li>created a sticky Navbar and imported it into all the pages</li>
             <li>Created Cart page</li>
@@ -128,16 +128,16 @@ function Projects() {
         <ImgDiv></ImgDiv>
         <DetailsDiv>
           <NameDiv>
-          Tata 1mg
+          <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      Tata 1mg</h5>
           </NameDiv>
           <DescDiv show={toshow}>
             <p>It is a web application for medicinal and other health products.</p>
-            <ul> <h5>Features:</h5>
+            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
             <li>Sign-in/Sign-up</li>
             <li>Cart | Products page | Products details page</li>
             <li>User authentication</li>
             </ul>
-            <ul> <h5>Areas of responsibility:</h5>
+            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Areas of responsibility:</h5>
               <li>Laid out the plan for the team members and distributed the work among us</li>
               <li>Created Home page</li>
           <li>Collected the data and created the stack of the data</li>
