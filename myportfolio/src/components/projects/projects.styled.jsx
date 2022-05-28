@@ -32,6 +32,7 @@ border:1px solid brown;
 width:40%;
 height:100%;
 position:relative;
+
 `
 
 export const LinkDiv = styled.div`
@@ -58,4 +59,12 @@ width:100%;
 height:100%;
 border:1px solid red;
 
+`
+export const Atag = styled.a`
+color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+`
+export const NameDiv = styled.div`
+height:40px;
+position:sticky;
+border: 1px solid black;
 `

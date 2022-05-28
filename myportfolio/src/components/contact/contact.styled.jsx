@@ -58,3 +58,6 @@ height:100%;
 /* text-align:center;
 align-items:center; */
 `
+export const ContactLink = styled.a`
+color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+`

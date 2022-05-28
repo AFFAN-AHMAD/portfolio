@@ -14,6 +14,7 @@ import {
   MediumDiv,
   MediumImg,
   MediumDiv2,
+  ContactLink
 } from "./contact.styled";
 import { requirePropFactory } from "@mui/material";
 function Contact() {
@@ -26,10 +27,18 @@ function Contact() {
   return (
     <>
       <ContactsDiv theme={theme}>
-              <H1tag>Contact</H1tag>
-              {/* div containing all the elements other than Heading */}
-              <div style={{ marginBottom: "50px ", display: "flex", margin: "auto", width: "80%" , justifyContent:"space-between"}}>
-                  {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard for alert from toastify ,
+        <H1tag>Contact</H1tag>
+        {/* div containing all the elements other than Heading */}
+        <div
+          style={{
+            marginBottom: "50px ",
+            display: "flex",
+            margin: "auto",
+            width: "80%",
+            justifyContent: "space-between",
+          }}
+        >
+          {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard for alert from toastify ,
                   copyToClipboard is a function for triggering toast ;ContentCopyIcon from Material ui */}
           <EmailDiv>
             <ToastContainer />
@@ -44,24 +53,35 @@ function Contact() {
                 Copy{" "}
               </ContentCopyIcon>
             </CopyToClipboard>
-                  </EmailDiv>
-                  {/* Mobdiv from styled component */}
+          </EmailDiv>
+          {/* Mobdiv from styled component */}
           <MobDiv>
             <p>+91 8700171723</p>
-                  </MobDiv>
-                  {/* div containing icons for social media platforms; LinkedInIcon,GitHubIcon from Material ui;
+          </MobDiv>
+          {/* div containing icons for social media platforms; LinkedInIcon,GitHubIcon from Material ui;
                     MediumDiv,MediumDiv2,MediumImg from styled components;
                     MediumDiv and MediumDiv2 are used to toggle between two logo images as Medium's icon was not available
                     on Material ui*/}
           <div style={{ display: "flex" }}>
-            <LinkedInIcon />
-            <GitHubIcon />
-            <MediumDiv theme={theme}>
-              <MediumImg src="https://miro.medium.com/max/1400/1*psYl0y9DUzZWtHzFJLIvTw.png" />
-            </MediumDiv>
-            <MediumDiv2 theme={theme}>
-              <MediumImg src={require("./Medium.jpg")} />
-            </MediumDiv2>
+            <ContactLink theme={theme}
+              href="https://www.linkedin.com/in/affan-ahmad-31bba9184/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedInIcon />
+            </ContactLink>
+            <ContactLink theme={theme} href="https://github.com/AFFAN-AHMAD" target="_blank">
+              {" "}
+              <GitHubIcon />
+            </ContactLink>
+            <a href="https://medium.com/@affanahmad2797" target="_blank">
+              <MediumDiv theme={theme}>
+                <MediumImg src="https://miro.medium.com/max/1400/1*psYl0y9DUzZWtHzFJLIvTw.png" />
+              </MediumDiv>
+              <MediumDiv2 theme={theme}>
+                <MediumImg src={require("./Medium.jpg")} />
+              </MediumDiv2>
+            </a>
           </div>
         </div>
       </ContactsDiv>
