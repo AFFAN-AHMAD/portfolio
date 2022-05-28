@@ -11,7 +11,7 @@ import {
   DetailsDiv,
   LinkDiv,
   ImgFrame,
-  VidFrame,
+  DescDiv,
   Atag,
   NameDiv,
 } from "./projects.styled";
@@ -30,9 +30,9 @@ function Projects() {
         </ImgDiv>
         <DetailsDiv>
           <NameDiv>
-            <h4 style={{fontStyle:"italic"}}>Myntra</h4>
+        Myntra
           </NameDiv>
-          <div style={{textAlign:"left",}}>
+          <DescDiv show={toshow1}>
           <p>Myntra is a leading e-commerce website of India.</p>
           <ul> <h5>Features:</h5>
             <li>Sign-in/Sign-up</li>
@@ -42,9 +42,12 @@ function Projects() {
             </ul>
             
             <ul> <h5>Areas of responsibility:</h5>
-
+              <li>Creation of Men's Product Page</li>
+              <li>Creation of Men's Product Details Page</li>
+              <li>Creation of Women's Product Page</li>
+              <li>Creation of Women's Product Detail's page</li>
             </ul>
-          </div>
+          </DescDiv>
           <LinkDiv show={toshow1}>
             <p style={{ textAlign: "center" }}>
               {" "}
@@ -77,8 +80,21 @@ function Projects() {
         <ImgDiv></ImgDiv>
         <DetailsDiv>
           <NameDiv>
-          <p>Nykaa</p>
+          Nykaa
           </NameDiv>
+          <DescDiv show={toshow2}>
+            <p>NykaMan is an e-commerce website that deals in grooming and makeup products exclusively for men. Our team has cloned this website within a period of 5 days.</p>
+            <ul> <h5>Features:</h5>
+            <li>Sign-in/Sign-up</li>
+            <li>Cart | Products page | Products details page</li>
+            <li>User authentication</li>
+            </ul>
+            <ul> <h5>Areas of responsibility:</h5>
+            <li>Responsible for the UI of the website</li>
+            <li>created a sticky Navbar and imported it into all the pages</li>
+            <li>Created Cart page</li>
+            </ul>
+          </DescDiv>
           <LinkDiv show={toshow2}>
             <p style={{ textAlign: "center" }}>
               {" "}

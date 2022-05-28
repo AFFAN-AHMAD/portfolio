@@ -8,18 +8,15 @@ export const LinkProvider = ({ children }) => {
 
     const handleHover1 = () => {
         setToshow1(toshow1 == true ? false : true)
-        console.log("1",toshow1)
 
     }
 
 
     const handleHover2 = () => {
         setToshow2(toshow2 == true ? false : true)
-        console.log("2",toshow2)
     }
     const handleHover = () => {
         setToshow(toshow == true ? false : true)
-        console.log("3",toshow)
 
     }
     return (

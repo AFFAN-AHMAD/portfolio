@@ -13,26 +13,45 @@ height:60px;
 font-style:italic`
 
 export const ProDiv = styled.div`
-height:300px;
+height:310px;
 width:70%;
-border:1px solid red;
+border:5px solid darkgray;
 margin:40px auto;
 display: flex;
-
+box-sizing: border-box;
 `
 export const ImgDiv = styled.div`
-border:1px solid black;
+/* border:1px solid black; */
 width:60%;
 height:100%;
 
 `
 
 export const DetailsDiv = styled.div`
-border:1px solid brown;
+/* border:1px solid brown; */
 width:40%;
 height:100%;
 position:relative;
+box-sizing: border-box;
 
+`
+export const NameDiv = styled.div`
+height:40px;
+position:sticky;
+/* border: 1px solid ; */
+`
+export const DescDiv = styled.div`
+/* height:200px; */
+width:100%;
+box-sizing: border-box;
+overflow: scroll;
+text-align: left;
+height:${props => props.show == true ? "260px" : "200px"};
+&::-webkit-scrollbar {
+    display:none ;
+      
+    }
+   
 `
 
 export const LinkDiv = styled.div`
@@ -51,7 +70,7 @@ z-index:0;
 export const ImgFrame = styled.img`
 width:100%;
 height:100%;
-border:1px solid red;
+/* border:1px solid red; */
 
 `
 export const VidFrame = styled.video`
@@ -62,9 +81,4 @@ border:1px solid red;
 `
 export const Atag = styled.a`
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
-`
-export const NameDiv = styled.div`
-height:40px;
-position:sticky;
-border: 1px solid black;
 `
