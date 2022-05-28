@@ -38,8 +38,9 @@ function Contact() {
             justifyContent: "space-between",
           }}
         >
-          {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard for alert from toastify ,
-                  copyToClipboard is a function for triggering toast ;ContentCopyIcon from Material ui */}
+          {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;
+          CopyToClipboardfrom react-copy-to-clipboard;copyToClipboard is a function for triggering toast ;
+          ContentCopyIcon from Material ui */}
           <EmailDiv>
             <ToastContainer />
             <div>
@@ -50,7 +51,7 @@ function Contact() {
                 value="affanahmad2797@gmail.com"
                 onClick={copyToClipboard}
               >
-                Copy{" "}
+                
               </ContentCopyIcon>
             </CopyToClipboard>
           </EmailDiv>

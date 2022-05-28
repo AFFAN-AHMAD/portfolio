@@ -8,7 +8,6 @@ import Skills from '../skills/Skills'
 function Home() {
   return (
     <>
-      <Photo/>
       <About />
       <Skills />
       <Projects />

@@ -30,18 +30,29 @@ function Projects() {
         </ImgDiv>
         <DetailsDiv>
           <NameDiv>
-  <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      Myntra</h5>
+            <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
+              {" "}
+              Myntra
+            </h5>
           </NameDiv>
           <DescDiv show={toshow1}>
-          <p>Myntra is a leading e-commerce website of India.</p>
-          <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
-            <li>Sign-in/Sign-up</li>
-            <li>Cart | Products page | Products details page</li>
-            <li>User authentication</li>
-            {/* <li></li> */}
+            <p>Myntra is a leading e-commerce website of India.</p>
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Features:
+              </h5>
+              <li>Sign-in/Sign-up</li>
+              <li>Cart | Products page | Products details page</li>
+              <li>User authentication</li>
+              {/* <li></li> */}
             </ul>
-            
-            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Areas of responsibility:</h5>
+
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Areas of responsibility:
+              </h5>
               <li>Creation of Men's Product Page</li>
               <li>Creation of Men's Product Details Page</li>
               <li>Creation of Women's Product Page</li>
@@ -50,27 +61,32 @@ function Projects() {
             <p> Team of 3 members,executed it in 6 days.</p>
           </DescDiv>
           <LinkDiv show={toshow1}>
-            <p style={{ textAlign: "center",color:"whitesmoke" }}>
-              {" "}
-              Live{" "}
+            {" "}
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
               <Atag
                 theme={theme}
                 href="https://myntra-clone-unitfour.herokuapp.com/"
                 target="_blank"
               >
-                <OpenInNewIcon style={{ fontSize: "medium" }} />
+                <p> Live </p>
+                <p>
+                  {" "}
+                  <OpenInNewIcon style={{ fontSize: "medium" }} />
+                </p>
               </Atag>{" "}
             </p>
-            <p style={{ textAlign: "center", color:"whitesmoke" }}>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
-              Github{" "}
               <Atag
                 theme={theme}
                 href="https://github.com/AdarshKhandare/Myntra_Clone_U4"
                 target="_blank"
               >
-                {" "}
-                <GitHubIcon style={{ fontSize: "medium" }} />
+                <p> Github</p>
+                <p>
+                  {" "}
+                  <GitHubIcon style={{ fontSize: "medium" }} />
+                </p>{" "}
               </Atag>
             </p>
           </LinkDiv>
@@ -81,46 +97,65 @@ function Projects() {
         <ImgDiv></ImgDiv>
         <DetailsDiv>
           <NameDiv>
-          <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      NykaaMan</h5>
+            <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
+              {" "}
+              NykaaMan
+            </h5>
           </NameDiv>
           <DescDiv show={toshow2}>
-            <p>NykaaMan is an e-commerce website that deals in grooming and makeup products exclusively for men. Our team has cloned this website within a period of 5 days.</p>
-            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
-            <li>Sign-in/Sign-up</li>
-            <li>Cart | Products page | Products details page</li>
-            <li>User authentication</li>
+            <p>
+              NykaaMan is an e-commerce website that deals in grooming and
+              makeup products exclusively for men. Our team has cloned this
+              website within a period of 5 days.
+            </p>
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Features:
+              </h5>
+              <li>Sign-in/Sign-up</li>
+              <li>Cart | Products page | Products details page</li>
+              <li>User authentication</li>
             </ul>
-            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Areas of responsibility:</h5>
-            <li>Responsible for the UI of the website</li>
-            <li>created a sticky Navbar and imported it into all the pages</li>
-            <li>Created Cart page</li>
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Areas of responsibility:
+              </h5>
+              <li>Responsible for the UI of the website</li>
+              <li>
+                created a sticky Navbar and imported it into all the pages
+              </li>
+              <li>Created Cart page</li>
             </ul>
             <p> Team of 5 members,executed it in 6 days.</p>
-
           </DescDiv>
           <LinkDiv show={toshow2}>
-          <p style={{ textAlign: "center",color:"whitesmoke" }}>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
-              Live{" "}
+              {" "}
               <Atag
                 theme={theme}
                 href="https://remarkable-klepon-8f9936.netlify.app/"
                 target="_blank"
               >
                 {" "}
-                <OpenInNewIcon style={{ fontSize: "medium" }} />
+                <p>Live</p>
+                <p>  <OpenInNewIcon style={{ fontSize: "medium" }} /></p>
+              
               </Atag>
             </p>
-            <p style={{ textAlign: "center",color:"whitesmoke" }}>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
-              Github{" "}
               <Atag
                 theme={theme}
                 href="https://github.com/AFFAN-AHMAD/Nyka-man-clone"
                 target="_blank"
               >
-                {" "}
-                <GitHubIcon style={{ fontSize: "medium" }} />
+                <p> Github</p>
+                <p>
+                  <GitHubIcon style={{ fontSize: "medium" }} />
+                </p>{" "}
               </Atag>
             </p>
           </LinkDiv>
@@ -131,48 +166,72 @@ function Projects() {
         <ImgDiv></ImgDiv>
         <DetailsDiv>
           <NameDiv>
-          <h5 style={{margin:"5px 0px 0px 0px", fontStyle:"italic"}}>      Tata 1mg</h5>
+            <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
+              {" "}
+              Tata 1mg
+            </h5>
           </NameDiv>
           <DescDiv show={toshow}>
-            <p>It is a web application for medicinal and other health products.</p>
-            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Features:</h5>
-            <li>Sign-in/Sign-up</li>
-            <li>Cart | Products page | Products details page</li>
-            <li>User authentication</li>
+            <p>
+              It is a web application for medicinal and other health products.
+            </p>
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Features:
+              </h5>
+              <li>Sign-in/Sign-up</li>
+              <li>Cart | Products page | Products details page</li>
+              <li>User authentication</li>
             </ul>
-            <ul> <h5 style={{fontStyle:"italic", marginBottom:"5px"}}>Areas of responsibility:</h5>
-              <li>Laid out the plan for the team members and distributed the work among us</li>
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Areas of responsibility:
+              </h5>
+              <li>
+                Laid out the plan for the team members and distributed the work
+                among us
+              </li>
               <li>Created Home page</li>
-          <li>Collected the data and created the stack of the data</li>
+              <li>Collected the data and created the stack of the data</li>
               <li>Provided assistance to teammates</li>
-              <li>Developed product page functionalities for the sorting of products</li>
+              <li>
+                Developed product page functionalities for the sorting of
+                products
+              </li>
             </ul>
             <p> Team of 6 members,executed it in 5 days.</p>
-
           </DescDiv>
           <LinkDiv show={toshow}>
-          <p style={{ textAlign: "center",color:"whitesmoke" }}>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
-              Live{" "}
+              {" "}
               <Atag
                 theme={theme}
                 href="https://precious-biscotti-be61c5.netlify.app/feature.html"
                 target="_blank"
               >
                 {" "}
-                <OpenInNewIcon style={{ fontSize: "medium" }} />
+                <p>Live</p>
+                <p><OpenInNewIcon style={{ fontSize: "medium" }} /></p>
+                
               </Atag>
             </p>
-            <p style={{ textAlign: "center",color:"whitesmoke" }}>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
-              Github{" "}
+              {" "}
               <Atag
                 theme={theme}
                 href="https://github.com/AFFAN-AHMAD/project-1mg"
                 target="_blank"
               >
                 {" "}
-                <GitHubIcon style={{ fontSize: "medium" }} />
+                <p>Github</p>
+                <p>
+                  {" "}
+                  <GitHubIcon style={{ fontSize: "medium" }} />
+                </p>
               </Atag>
             </p>
           </LinkDiv>

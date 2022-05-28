@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import { Navbar,NameDiv ,TagsDiv ,DensityIconDiv , LightDiv,DarkDiv} from './nav.styled'
+import { Navbar,NameDiv ,TagsDiv ,DensityIconDiv , LightDiv,DarkDiv,Atag} from './nav.styled'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import {ThemeContext} from "../../context/themeContext"
@@ -11,7 +11,7 @@ function Nav() {
         <NameDiv>
             Affan Ahmad
         </NameDiv>
-        <div><h5>Download CV</h5> </div>
+        <div><h5><Atag theme={theme} href="https://drive.google.com/file/d/1LG4uS-jFIUFDUm34wsjZeWmdb-O_F-Ov/view?usp=sharing" target="_blank" >View CV</Atag></h5> </div>
         <TagsDiv>
           <a>home</a>
           <a>about</a>

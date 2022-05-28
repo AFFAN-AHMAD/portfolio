@@ -4,12 +4,12 @@ import { PhotoDiv, MainDIv,Image } from "./photo.styled";
 function Photo() {
   const { theme } = useContext(ThemeContext);
   return (
-    <MainDIv  theme={theme}>
+    <>
       <PhotoDiv>
         {" "}
-        <Image src={require("./affan.png")}/>
+        <Image src={require("./affanphoto.png")}/>
       </PhotoDiv>
-    </MainDIv>
+    </>
   );
 }
 

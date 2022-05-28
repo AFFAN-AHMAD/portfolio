@@ -85,3 +85,12 @@ box-sizing: border-box;
 display:${props=>props.theme=="light"?"none":"block"};
 
 `
+export const Atag = styled.a`
+color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+
+display: flex;
+text-decoration: none;
+gap:3px;
+justify-content: space-around;
+
+`
