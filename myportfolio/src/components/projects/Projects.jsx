@@ -58,7 +58,7 @@ function Projects() {
               <li>Creation of Women's Product Page</li>
               <li>Creation of Women's Product Detail's page</li>
             </ul>
-            <p> Team of 3 members,executed it in 6 days.</p>
+            <p> Team of 3 members, executed it in 6 days.</p>
           </DescDiv>
           <LinkDiv show={toshow1} theme={theme} >
             {" "}
@@ -134,7 +134,7 @@ function Projects() {
               </li>
               <li>Created Cart page</li>
             </ul>
-            <p> Team of 5 members,executed it in 6 days.</p>
+            <p> Team of 5 members, executed it in 6 days.</p>
           </DescDiv>
           <LinkDiv show={toshow2} theme={theme}>
             <p style={{ textAlign: "center", color: "whitesmoke" }}>
@@ -210,7 +210,7 @@ function Projects() {
                 products
               </li>
             </ul>
-            <p> Team of 6 members,executed it in 5 days.</p>
+            <p> Team of 6 members, executed it in 5 days.</p>
           </DescDiv>
           <LinkDiv show={toshow} theme={theme} >
             <p style={{ textAlign: "center", color: "whitesmoke" }}>

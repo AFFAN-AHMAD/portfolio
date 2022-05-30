@@ -15,7 +15,8 @@ import {
   MediumDiv,
   MediumImg,
   MediumDiv2,
-  ContactLink
+  ContactLink,
+  MainDiv
 } from "./contact.styled";
 import { requirePropFactory } from "@mui/material";
 function Contact() {
@@ -30,14 +31,8 @@ function Contact() {
       <ContactsDiv theme={theme} id="contact">
         <H1tag>Contact</H1tag>
         {/* div containing all the elements other than Heading */}
-        <div
-          style={{
-            marginBottom: "50px ",
-            display: "flex",
-            margin: "auto",
-            width: "80%",
-            justifyContent: "space-between",
-          }}
+        <MainDiv
+       
         >
           {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;
           CopyToClipboardfrom react-copy-to-clipboard;copyToClipboard is a function for triggering toast ;
@@ -86,7 +81,7 @@ function Contact() {
               </MediumDiv2>
             </a>
         </div>
-      </div>
+      </MainDiv>
       
       </ContactsDiv>
    

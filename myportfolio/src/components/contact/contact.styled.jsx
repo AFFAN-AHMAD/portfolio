@@ -9,6 +9,25 @@ padding: 30px 0px;
 /* box-shadow: 2px 2px 5px 10px darkgray; */
 
 `
+export const MainDiv = styled.div`
+            margin-bottom:50px;
+            display: flex;
+            margin: auto;
+            width: 80%;
+            justify-content:space-between ;
+            
+
+    @media screen and (max-width:600px) {
+        display: block;
+        height: auto;
+        align-self:center ;
+        align-items: center;
+        text-align: center;
+    }
+
+`
+
+
 export const H1tag = styled.h1`
 height:60px;
 font-style:italic`
@@ -20,7 +39,8 @@ display:flex;
 text-align:center;
 align-items:center;
 gap:4px;
-margin-top:-20px`
+margin-top:-20px;
+`
 
 
 export const MobDiv = styled.div`
@@ -30,7 +50,9 @@ display:flex;
 text-align:center;
 align-items:center;
 gap:4px;
-margin-top:-20px`
+margin-top:-20px;
+
+`
 
 
 
@@ -40,7 +62,8 @@ height:25px;
 text-align:center;
 align-items:center;
 margin:0px 2px;
-display: ${props=>props.theme=="light"?"none":"block"};
+display: ${props => props.theme == "light" ? "none" : "block"};
+
 `
 export const MediumDiv2 = styled.div`
 width:25px;
@@ -60,4 +83,5 @@ align-items:center; */
 `
 export const ContactLink = styled.a`
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+
 `

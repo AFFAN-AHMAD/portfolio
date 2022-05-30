@@ -18,14 +18,22 @@ width:70%;
 border:5px solid darkgray;
 margin:40px auto;
 display: flex;
+/* grid-template-columns: repeat(2, 1fr 1fr); */
 box-sizing: border-box;
 border-radius: 10px;
+@media screen and (max-width:600px) {
+    display:block;
+    height:auto
+}
 `
 export const ImgDiv = styled.div`
 /* border:1px solid black; */
 width:60%;
 height:100%;
-
+@media screen and (max-width:600px) {
+    width:100%;
+    height:60%
+}
 `
 
 export const DetailsDiv = styled.div`
@@ -34,7 +42,10 @@ width:40%;
 height:100%;
 position:relative;
 box-sizing: border-box;
-
+@media screen and (max-width:600px) {
+    width:100%;
+    height:40%
+}
 `
 export const NameDiv = styled.div`
 margin-top: -5px;
@@ -70,6 +81,7 @@ gap:20px;
 justify-content: space-around;
 align-items: center;
 z-index:0;
+border-bottom-right-radius: 5px;
 `
 
 export const ImgFrame = styled.img`

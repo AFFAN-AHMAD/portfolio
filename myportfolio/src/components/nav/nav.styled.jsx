@@ -7,7 +7,7 @@ height:80px;
 /* border:1px solid red; */
 position:sticky;
 top:0px;
-background:${props => props.theme == "light" ? "#10101a" : "whitesmoke"};
+background:${props => props.theme == "light" ? "#a872e8" : "darkgray"};
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 margin:0;
 padding:0;
@@ -110,7 +110,7 @@ margin:0px;
 padding:0px;
 &:hover {
     padding-bottom: 5px;
-    border-bottom:3px solid gray
+    border-bottom:3px solid white
 }
 
 `
