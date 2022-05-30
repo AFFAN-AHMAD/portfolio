@@ -5,7 +5,9 @@ function Skills() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <SkillsDiv theme={theme}>
+    <SkillsDiv theme={theme} id="skills">
+            <div style={{padding:"30px"}}></div>
+
       <H1tag>Skills</H1tag>
       <TopSkillsDiv>
   {/* Javascript */}

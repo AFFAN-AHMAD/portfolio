@@ -14,7 +14,7 @@ padding:0;
 z-index:1;
 display: flex;
 box-sizing: border-box;
-box-shadow: 2px 2px 5px 10px darkgray;
+/* box-shadow: 2px 2px 5px 10px darkgray; */
 @media all and  (max-width:870px) {
 /* border:1px solid red; */
 height:150px;
@@ -36,7 +36,7 @@ box-sizing: border-box;
 
 font-size:40px
 }
- 
+
 `
 export const TagsDiv = styled.div`
 width:70%;
@@ -87,10 +87,30 @@ display:${props=>props.theme=="light"?"none":"block"};
 `
 export const Atag = styled.a`
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+background-color: ${props => props.theme == "dark" ?"":""};
+box-sizing: border-box;
+&:hover {
+border: 2px solid gray;
+padding: 5px;
 
-display: flex;
+}
 text-decoration: none;
-gap:3px;
-justify-content: space-around;
+
+
+`
+export const ResDiv = styled.div`
+width:100px;
+height:70px;
+margin: 5px;
+font-style: italic;
+`
+
+export const BorderToNavDiv = styled.p`
+margin:0px;
+padding:0px;
+&:hover {
+    padding-bottom: 5px;
+    border-bottom:3px solid gray
+}
 
 `

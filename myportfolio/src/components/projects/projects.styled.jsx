@@ -6,7 +6,7 @@ height:auto;
 background:${props => props.theme == "light" ? "#10101a" : "whitesmoke"};
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 padding:50px 0px;
-box-shadow: 2px 2px 5px 10px darkgray;
+/* box-shadow: 2px 2px 5px 10px darkgray; */
 `
 export const H1tag = styled.h1`
 height:60px;
@@ -19,6 +19,7 @@ border:5px solid darkgray;
 margin:40px auto;
 display: flex;
 box-sizing: border-box;
+border-radius: 10px;
 `
 export const ImgDiv = styled.div`
 /* border:1px solid black; */
@@ -36,9 +37,12 @@ box-sizing: border-box;
 
 `
 export const NameDiv = styled.div`
+margin-top: -5px;
+padding-top: 5px;
 height:40px;
 position:sticky;
-/* border: 1px solid ; */
+background-color: ${props=>props.theme=="light"?"#350434" :"#bacd60" }  ;
+border-top-right-radius: 10px;
 `
 export const DescDiv = styled.div`
 /* height:200px; */
@@ -58,7 +62,7 @@ height:${props => props.show == true ? "260px" : "200px"};
 export const LinkDiv = styled.div`
 height:60px;
 position:sticky;
-background-color: red;
+background-color: ${props=>props.theme=="light"?"#e59f6c":"#162155"};
 float:bottom;
 top:100%;
 display: ${props => props.show == true ? "none" : "flex"};

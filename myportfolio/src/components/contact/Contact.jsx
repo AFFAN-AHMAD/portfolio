@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { TabScrollButton } from '@mui/material';
 import {
   ContactsDiv,
   H1tag,
@@ -25,8 +26,8 @@ function Contact() {
   }
 
   return (
-    <>
-      <ContactsDiv theme={theme}>
+
+      <ContactsDiv theme={theme} id="contact">
         <H1tag>Contact</H1tag>
         {/* div containing all the elements other than Heading */}
         <div
@@ -49,7 +50,8 @@ function Contact() {
             <CopyToClipboard text="affanahmad2797@gmail.com">
               <ContentCopyIcon
                 value="affanahmad2797@gmail.com"
-                onClick={copyToClipboard}
+              onClick={copyToClipboard}
+              style={{cursor:"pointer"}}
               >
                 
               </ContentCopyIcon>
@@ -83,10 +85,11 @@ function Contact() {
                 <MediumImg src={require("./Medium.jpg")} />
               </MediumDiv2>
             </a>
-          </div>
         </div>
+      </div>
+      
       </ContactsDiv>
-    </>
+   
   );
 }
 

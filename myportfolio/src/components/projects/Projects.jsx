@@ -21,15 +21,15 @@ function Projects() {
     useContext(LinkContext);
 
   return (
-    <ProjectsDiv theme={theme}>
+    <ProjectsDiv theme={theme} id="projects">
       <H1tag>Projects</H1tag>
       {/* 1st project */}
       <ProDiv onMouseEnter={handleHover1} onMouseLeave={handleHover1}>
         <ImgDiv>
-          <ImgFrame src={require("./rocket.gif")} alt="abcd"></ImgFrame>
+          <ImgFrame src={require("./myntra.gif")} alt="abcd"></ImgFrame>
         </ImgDiv>
         <DetailsDiv>
-          <NameDiv>
+          <NameDiv theme={theme}>
             <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
               {" "}
               Myntra
@@ -60,7 +60,7 @@ function Projects() {
             </ul>
             <p> Team of 3 members,executed it in 6 days.</p>
           </DescDiv>
-          <LinkDiv show={toshow1}>
+          <LinkDiv show={toshow1} theme={theme} >
             {" "}
             <p style={{ textAlign: "center", color: "whitesmoke" }}>
               <Atag
@@ -92,11 +92,17 @@ function Projects() {
           </LinkDiv>
         </DetailsDiv>
       </ProDiv>
+
+
+
       {/* 2nd project */}
       <ProDiv onMouseEnter={handleHover2} onMouseLeave={handleHover2}>
-        <ImgDiv></ImgDiv>
+        <ImgDiv>
+
+        <ImgFrame src={require("./nykaa.gif")} alt="abcd"></ImgFrame>
+        </ImgDiv>
         <DetailsDiv>
-          <NameDiv>
+          <NameDiv theme={theme}>
             <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
               {" "}
               NykaaMan
@@ -130,7 +136,7 @@ function Projects() {
             </ul>
             <p> Team of 5 members,executed it in 6 days.</p>
           </DescDiv>
-          <LinkDiv show={toshow2}>
+          <LinkDiv show={toshow2} theme={theme}>
             <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
               {" "}
@@ -163,9 +169,12 @@ function Projects() {
       </ProDiv>
       {/* 3rd project */}
       <ProDiv onMouseEnter={handleHover} onMouseLeave={handleHover}>
-        <ImgDiv></ImgDiv>
+        <ImgDiv>
+
+        <ImgFrame src={require("./tata.gif")} alt="abcd"></ImgFrame>
+        </ImgDiv>
         <DetailsDiv>
-          <NameDiv>
+          <NameDiv theme={theme}>
             <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
               {" "}
               Tata 1mg
@@ -203,7 +212,7 @@ function Projects() {
             </ul>
             <p> Team of 6 members,executed it in 5 days.</p>
           </DescDiv>
-          <LinkDiv show={toshow}>
+          <LinkDiv show={toshow} theme={theme} >
             <p style={{ textAlign: "center", color: "whitesmoke" }}>
               {" "}
               {" "}
