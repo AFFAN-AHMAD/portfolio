@@ -90,7 +90,7 @@ color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 background-color: ${props => props.theme == "dark" ?"":""};
 box-sizing: border-box;
 &:hover {
-border: 2px solid gray;
+border: 2px solid white;
 padding: 5px;
 
 }
@@ -100,14 +100,21 @@ text-decoration: none;
 `
 export const ResDiv = styled.div`
 width:100px;
-height:70px;
+height:50px;
 margin: 5px;
+/* border: 1px solid black; */
 font-style: italic;
+&:hover{
+
+   
+}
 `
 
 export const BorderToNavDiv = styled.p`
 margin:0px;
 padding:0px;
+border-bottom: ${props => props.bord == true ? "3px solid white" : "none"};
+padding-bottom: ${props => props.bord == true ?"3px" :"0px"};
 &:hover {
     padding-bottom: 5px;
     border-bottom:3px solid white

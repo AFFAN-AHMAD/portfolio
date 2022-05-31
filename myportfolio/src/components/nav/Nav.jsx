@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { ThemeContext } from "../../context/themeContext";
+import { HoverContext } from "../../context/hoverContext";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -16,6 +17,7 @@ import {
 } from "./nav.styled";
 function Nav() {
   const { handleClick, theme } = useContext(ThemeContext);
+  const { home,onHome,about,onAbout,projects,onProjects,skills,onSkills,contacts,onContacts} = useContext(HoverContext);
   return (
     <>
       <Navbar theme={theme}>
@@ -35,7 +37,7 @@ function Nav() {
           <a>
             <div onClick={() => scroll.scrollToTop()}>
               {" "}
-              <BorderToNavDiv>home</BorderToNavDiv>
+              <BorderToNavDiv onClick={onHome} bord={home}>home</BorderToNavDiv>
             </div>
           </a>
           <Link
@@ -46,7 +48,7 @@ function Nav() {
             style={{ cursor: "pointer" }}
           >
             {" "}
-            <BorderToNavDiv>about</BorderToNavDiv>
+            <BorderToNavDiv onClick={onAbout} bord={about}>about</BorderToNavDiv>
           </Link>
           <Link
             to="skills"
@@ -55,7 +57,7 @@ function Nav() {
             style={{ cursor: "pointer" }}
           >
             {" "}
-            <BorderToNavDiv>skills</BorderToNavDiv>
+            <BorderToNavDiv onClick={onSkills} bord={skills}>skills</BorderToNavDiv>
           </Link>
           <Link
             to="projects"
@@ -64,7 +66,7 @@ function Nav() {
             style={{ cursor: "pointer" }}
           >
             {" "}
-            <BorderToNavDiv>projects</BorderToNavDiv>
+            <BorderToNavDiv onClick={onProjects} bord={projects}>projects</BorderToNavDiv>
           </Link>
           <Link
             to="contact"
@@ -73,7 +75,7 @@ function Nav() {
             style={{ cursor: "pointer" }}
           >
             {" "}
-            <BorderToNavDiv>contact</BorderToNavDiv>
+            <BorderToNavDiv onClick={onContacts} bord={contacts}>contact</BorderToNavDiv>
           </Link>
         </TagsDiv>
         <div>

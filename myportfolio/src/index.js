@@ -1,19 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from './context/themeContext';
-import { LinkProvider } from './context/linkContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "./context/themeContext";
+import { LinkProvider } from "./context/linkContext";
+import { HoverProvider } from "./context/hoverContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <LinkProvider>
-
-    <ThemeProvider>
-    <App />
-    </ThemeProvider>
+      <HoverProvider>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </HoverProvider>
     </LinkProvider>
   </React.StrictMode>
 );

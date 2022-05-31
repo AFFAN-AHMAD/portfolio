@@ -7,12 +7,12 @@ import Skills from '../skills/Skills'
 
 function Home() {
   return (
-    <>
+    <div>
       <About />
       <Skills />
       <Projects />
       <Contact/>
-    </>
+    </div>
   )
 }
 
