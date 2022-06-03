@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/themeContext";
-import { SkillsDiv, H1tag,TopSkillsDiv,BottomSkillsDiv ,H5tag} from "./skills.styled";
+import { SkillsDiv, H1tag, TopSkillsDiv, BottomSkillsDiv, H5tag } from "./skills.styled";
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 function Skills() {
   const { theme } = useContext(ThemeContext);
 
@@ -9,7 +11,8 @@ function Skills() {
             <div style={{padding:"30px"}}></div>
 
       <H1tag>Skills</H1tag>
-      <TopSkillsDiv>
+      < >
+      <TopSkillsDiv  >
   {/* Javascript */}
         <div>
         <a
@@ -147,11 +150,14 @@ function Skills() {
           </div>
        
       </TopSkillsDiv>
-
+      </>
       <BottomSkillsDiv>
       {/* git */}
         <div>
-        <a href="https://git-scm.com/">
+          
+          <ScrollAnimation animateIn='bounceInRight'
+  animateOut='bounceOutLeft'>
+          <a href="https://git-scm.com/">
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
               width="48"
@@ -160,6 +166,8 @@ function Skills() {
             />
           </a>
           <H5tag>Git</H5tag>
+          </ScrollAnimation>
+        
          </div>
       {/* linux */}
         <div>

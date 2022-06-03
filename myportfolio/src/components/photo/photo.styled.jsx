@@ -11,8 +11,8 @@ export const MainDIv = styled.div`
   text-align: center;
 `;
 export const PhotoDiv = styled.div`
-  width: 250px;
-  height: 220px;
+  width: 420px;
+  height: 400px;
   margin: auto;
 `;
 export const Image = styled.img`

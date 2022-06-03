@@ -7,8 +7,8 @@ height:80px;
 /* border:1px solid red; */
 position:sticky;
 top:0px;
-background:${props => props.theme == "light" ? "#a872e8" : "darkgray"};
-color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+background:${props => props.theme == "light" ? "white" : "darkgray"};
+color:${props => props.theme == "dark" ? "#10101a" : "black"};
 margin:0;
 padding:0;
 z-index:1;
@@ -86,7 +86,7 @@ display:${props=>props.theme=="light"?"none":"block"};
 
 `
 export const Atag = styled.a`
-color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
+color:${props => props.theme == "dark" ? "#10101a" : "#10101a"};
 background-color: ${props => props.theme == "dark" ?"":""};
 box-sizing: border-box;
 &:hover {
@@ -113,7 +113,7 @@ font-style: italic;
 export const BorderToNavDiv = styled.p`
 margin:0px;
 padding:0px;
-border-bottom: ${props => props.bord == true ? "3px solid white" : "none"};
+border-bottom: ${props => props.f == true ? "3px solid white" : "none"};
 padding-bottom: ${props => props.bord == true ?"3px" :"0px"};
 &:hover {
     padding-bottom: 5px;

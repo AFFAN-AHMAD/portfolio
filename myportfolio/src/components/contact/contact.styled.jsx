@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ContactsDiv = styled.div`
 width:100%;
 height:auto;
-background:${props => props.theme == "light" ? "#10101a" : "whitesmoke"};
+background:${props => props.theme == "light" ? "#10101a" : "#acadb2"};
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 padding: 30px 0px;
 /* box-shadow: 2px 2px 5px 10px darkgray; */
@@ -51,7 +51,7 @@ text-align:center;
 align-items:center;
 gap:4px;
 margin-top:-20px;
-
+margin-right: 30px;
 `
 
 
