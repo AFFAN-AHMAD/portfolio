@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const AboutDiv = styled.div`
 width:100%;
 height:auto;
-background:${props => props.theme == "light" ? "#051519" : "#438d80"};
+background:${props => props.theme == "light" ? "#051519" : "#b7b6bb"};
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 padding:50px 0px;
 /* box-shadow: 2px 2px 5px 10px darkgray; */

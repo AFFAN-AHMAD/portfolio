@@ -62,7 +62,7 @@ function Nav() {
           <Link
             to="projects"
             smooth={"easeInQuint"}
-            duration={2000}
+            duration={1500}
             style={{ cursor: "pointer" }}
           >
             {" "}
@@ -71,7 +71,7 @@ function Nav() {
           <Link
             to="contact"
             smooth={"easeInQuint"}
-            duration={2200}
+            duration={2000}
             style={{ cursor: "pointer" }}
           >
             {" "}
