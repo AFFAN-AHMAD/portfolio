@@ -90,8 +90,8 @@ color:${props => props.theme == "dark" ? "#10101a" : "#10101a"};
 background-color: ${props => props.theme == "dark" ?"":""};
 box-sizing: border-box;
 &:hover {
-border: 2px solid white;
-padding: 5px;
+border: 2px solid black;
+padding: 3px;
 
 }
 text-decoration: none;
@@ -113,11 +113,11 @@ font-style: italic;
 export const BorderToNavDiv = styled.p`
 margin:0px;
 padding:0px;
-border-bottom: ${props => props.f == true ? "3px solid white" : "none"};
+border-bottom: ${props => props.bord == true ? "3px solid black" : "none"};
 padding-bottom: ${props => props.bord == true ?"3px" :"0px"};
 &:hover {
-    padding-bottom: 5px;
-    border-bottom:3px solid white
+    padding-bottom: 3px;
+    border-bottom:3px solid black
 }
 
 `

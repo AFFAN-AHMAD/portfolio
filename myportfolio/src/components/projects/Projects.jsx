@@ -22,6 +22,7 @@ function Projects() {
 
   return (
     <ProjectsDiv theme={theme} id="projects">
+      <div style={{padding:"30px"}}></div>
       <H1tag>Projects</H1tag>
       {/* 1st project */}
       <ProDiv onMouseEnter={handleHover1} onMouseLeave={handleHover1}>

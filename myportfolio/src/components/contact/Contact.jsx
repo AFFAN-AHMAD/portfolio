@@ -29,7 +29,7 @@ function Contact() {
   return (
 
       <ContactsDiv theme={theme} id="contact">
-        <H1tag>Contact</H1tag>
+        <H1tag>Let's Get Connected</H1tag>
         {/* div containing all the elements other than Heading */}
         <MainDiv
        
