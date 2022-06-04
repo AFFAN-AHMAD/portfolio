@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillsDiv = styled.div`
   width: 100%;
   height: auto;
-  background: ${(props) => (props.theme == "light" ? "#345c5f" : "#bc382e")};
+  background: ${(props) => (props.theme == "light" ? "#345c5f" : "#58838c")};
   color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
   padding: 50px 0px;
   /* box-shadow: 2px 2px 5px 10px darkgray; */
