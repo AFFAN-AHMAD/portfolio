@@ -5,7 +5,7 @@ import Photo from "../photo/Photo";
 function About() {
   const { theme } = useContext(ThemeContext);
   return (
-    <AboutDiv theme={theme} id="about">
+    <AboutDiv theme={theme} >
       <div style={{ padding: "30px" }}></div>
       <H1tag theme={theme}>About</H1tag>
 

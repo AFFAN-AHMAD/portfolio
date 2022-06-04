@@ -24,7 +24,7 @@ function Home() {
       />
       <Typewriters />
       <Skilled/>
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
       <Contact />
