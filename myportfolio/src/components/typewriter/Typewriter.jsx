@@ -28,7 +28,8 @@ function Typewriters() {
             .typeString("a Team Player")
             .pauseFor(2500)
             // .deleteAll()
-            .start();
+                .start()
+            
             // .callFunction(() => {
             //   console.log("String typed out!");
             // })

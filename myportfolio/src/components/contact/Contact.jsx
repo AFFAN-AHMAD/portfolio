@@ -19,6 +19,7 @@ import {
   MainDiv
 } from "./contact.styled";
 import { requirePropFactory } from "@mui/material";
+import ContactForm from "./ContactForm"
 function Contact() {
   const { theme } = useContext(ThemeContext);
 
@@ -30,10 +31,11 @@ function Contact() {
 
       <ContactsDiv theme={theme} id="contact">
         <H1tag>Let's Get Connected</H1tag>
-        {/* div containing all the elements other than Heading */}
+      {/* div containing all the elements other than Heading */}
         <MainDiv
        
         >
+      <ContactForm></ContactForm>
           {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;
           CopyToClipboardfrom react-copy-to-clipboard;copyToClipboard is a function for triggering toast ;
           ContentCopyIcon from Material ui */}

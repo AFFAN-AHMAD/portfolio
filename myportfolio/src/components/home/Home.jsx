@@ -5,11 +5,24 @@ import Photo from "../photo/Photo";
 import Projects from "../projects/Projects";
 import Skills from "../skills/Skills";
 import Typewriter from "typewriter-effect";
+import ScrollToTop from "react-scroll-to-top";
+
 import Typewriters from "../typewriter/Typewriter";
 function Home() {
   return (
     <div>
-    <Typewriters/>
+      <ScrollToTop
+        smooth
+        // style={{
+        //   backgroundColor: "green",
+        //   borderRadius: "52%",
+        //   fontSize: "10px",
+        //   fontWeight: "500",
+        //   color: "white",
+        // }}
+      />
+
+      <Typewriters />
       <About />
       <Skills />
       <Projects />

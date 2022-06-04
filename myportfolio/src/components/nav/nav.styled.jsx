@@ -11,7 +11,7 @@ background:${props => props.theme == "light" ? "white" : "darkgray"};
 color:${props => props.theme == "dark" ? "#10101a" : "black"};
 margin:0;
 padding:0;
-z-index:1;
+z-index:2;
 display: flex;
 box-sizing: border-box;
 /* box-shadow: 2px 2px 5px 10px darkgray; */

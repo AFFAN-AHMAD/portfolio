@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const SkillsDiv = styled.div`
   width: 100%;
   height: auto;
@@ -35,7 +34,7 @@ export const BottomSkillsDiv = styled.div`
   width: 30%;
   /* text-align: center; */
   display: flex;
-  gap: 30px;
+  gap: 16px;
   margin: 30px auto;
   justify-content: center;
   @media screen and (max-width: 720px) and (min-width: 400px) {
@@ -53,4 +52,22 @@ export const BottomSkillsDiv = styled.div`
 
 export const H5tag = styled.h5`
   margin: 0px auto;
+  width:70px;
+  color:black
 `;
+
+
+export const ContentDiv = styled.div`
+/* width:200px; */
+height:120px;
+box-sizing: border-box;
+background-color: white;
+padding:30px 20px;
+text-align: center;
+margin: 10px 0px;
+border-radius: 10px;
+/* box-shadow:  10px 10px green; */
+&:hover{transform:scale(1.15)}
+
+
+`

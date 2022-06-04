@@ -5,6 +5,7 @@ import { ThemeContext } from "../../context/themeContext";
 import { HoverContext } from "../../context/hoverContext";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
+import ScrollToTop from "react-scroll-to-top";
 import {
   Navbar,
   NameDiv,
@@ -94,6 +95,7 @@ function Nav() {
             <DarkModeIcon></DarkModeIcon>
           </DarkDiv>
         </div>
+        
       </Navbar>
     </>
   );
