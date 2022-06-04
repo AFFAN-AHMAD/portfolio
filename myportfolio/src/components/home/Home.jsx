@@ -8,6 +8,7 @@ import Typewriter from "typewriter-effect";
 import ScrollToTop from "react-scroll-to-top";
 
 import Typewriters from "../typewriter/Typewriter";
+import Skilled from "../skilled/Skilled";
 function Home() {
   return (
     <div>
@@ -21,8 +22,8 @@ function Home() {
         //   color: "white",
         // }}
       />
-
       <Typewriters />
+      <Skilled/>
       <About />
       <Skills />
       <Projects />

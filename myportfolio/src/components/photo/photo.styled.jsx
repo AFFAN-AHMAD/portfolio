@@ -9,6 +9,8 @@ export const MainDIv = styled.div`
   box-shadow: 2px 2px 5px 10px darkgray;
   align-items: center;
   text-align: center;
+  margin: 0;
+  padding:0
 `;
 export const PhotoDiv = styled.div`
   width: 420px;

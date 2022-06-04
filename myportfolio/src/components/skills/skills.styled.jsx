@@ -64,9 +64,9 @@ box-sizing: border-box;
 background-color: white;
 padding:30px 20px;
 text-align: center;
-margin: 10px 0px;
+margin: 20px 0px;
 border-radius: 10px;
-/* box-shadow:  10px 10px green; */
+box-shadow:  10px 10px black;
 &:hover{transform:scale(1.15)}
 
 
