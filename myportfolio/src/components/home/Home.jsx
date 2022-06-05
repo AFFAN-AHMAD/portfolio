@@ -6,7 +6,7 @@ import Projects from "../projects/Projects";
 import Skills from "../skills/Skills";
 import Typewriter from "typewriter-effect";
 import ScrollToTop from "react-scroll-to-top";
-
+import ContactForm from "../contact/ContactForm";
 import Typewriters from "../typewriter/Typewriter";
 import Skilled from "../skilled/Skilled";
 function Home() {

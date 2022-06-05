@@ -60,6 +60,7 @@ function Projects() {
               <li>Creation of Women's Product Detail's page</li>
             </ul>
             <p> Team of 3 members, executed it in 6 days.</p>
+            <h5>inspired by Myntra</h5>
           </DescDiv>
           <LinkDiv show={toshow1} theme={theme} >
             {" "}
@@ -136,6 +137,7 @@ function Projects() {
               <li>Created Cart page</li>
             </ul>
             <p> Team of 5 members, executed it in 6 days.</p>
+            <h5>inspired by NykaaMan</h5>
           </DescDiv>
           <LinkDiv show={toshow2} theme={theme}>
             <p style={{ textAlign: "center", color: "whitesmoke" }}>
@@ -212,6 +214,7 @@ function Projects() {
               </li>
             </ul>
             <p> Team of 6 members, executed it in 5 days.</p>
+            <h5>inspired by Tata1mg</h5>
           </DescDiv>
           <LinkDiv show={toshow} theme={theme} >
             <p style={{ textAlign: "center", color: "whitesmoke" }}>

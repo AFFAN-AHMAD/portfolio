@@ -32,13 +32,13 @@ function Contact() {
       <ContactsDiv theme={theme} id="contact">
         <H1tag>Let's Get Connected</H1tag>
       {/* div containing all the elements other than Heading */}
-        <MainDiv
-       
-        >
+        <MainDiv>
       <ContactForm></ContactForm>
           {/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;
           CopyToClipboardfrom react-copy-to-clipboard;copyToClipboard is a function for triggering toast ;
           ContentCopyIcon from Material ui */}
+        <div style={{marginTop:"40px",padding:"30px"}}>
+       
           <EmailDiv>
             <ToastContainer />
             <div>
@@ -62,7 +62,7 @@ function Contact() {
                     MediumDiv,MediumDiv2,MediumImg from styled components;
                     MediumDiv and MediumDiv2 are used to toggle between two logo images as Medium's icon was not available
                     on Material ui*/}
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex" ,gap:"10px", margin:"10px"}}>
             <ContactLink theme={theme}
               href="https://www.linkedin.com/in/affan-ahmad-31bba9184/"
               target="_blank"
@@ -82,6 +82,8 @@ function Contact() {
                 <MediumImg src={require("./Medium.jpg")} />
               </MediumDiv2>
             </a>
+        </div>
+           
         </div>
       </MainDiv>
       

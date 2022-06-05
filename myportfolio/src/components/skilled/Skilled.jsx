@@ -45,7 +45,7 @@ function Skilled() {
             has worked on various projects some of them you can check in the
             project section.
           </h3>
-          <p class="text-title">Autor</p>
+          <p class="text-title">Affan Ahmad</p>
         </div>
       </div>
     </MainDIv>

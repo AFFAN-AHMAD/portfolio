@@ -39,7 +39,7 @@ display:flex;
 text-align:center;
 align-items:center;
 gap:4px;
-margin-top:-20px;
+margin:10px;
 `
 
 
@@ -50,8 +50,8 @@ display:flex;
 text-align:center;
 align-items:center;
 gap:4px;
-margin-top:-20px;
-margin-right: 30px;
+margin:10px;
+/* margin-right: 30px; */
 `
 
 
