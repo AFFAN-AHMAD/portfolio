@@ -10,7 +10,8 @@ export const MainDIv = styled.div`
   align-items: center;
   text-align: center;
   margin: 0;
-  padding:0
+  padding:0;
+  box-sizing:border-box
 `;
 export const PhotoDiv = styled.div`
   width: 420px;

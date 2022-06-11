@@ -11,19 +11,34 @@ import Typewriters from "../typewriter/Typewriter";
 import Skilled from "../skilled/Skilled";
 function Home() {
   return (
-    <div>
-      <ScrollToTop
+    <div
+      style={{
+        boxSizing: "borderBox",
+        border: "1px solid red",
+        margin: "0",
+        padding: "0",
+        width: "100%",
+      }}
+    >
+      {/* <ScrollToTop
         smooth
-        // style={{
-        //   backgroundColor: "green",
-        //   borderRadius: "52%",
-        //   fontSize: "10px",
-        //   fontWeight: "500",
-        //   color: "white",
-        // }}
-      />
+        style={{
+          backgroundColor: "gray",
+          // borderRadius: "52%",
+          fontSize: "10px",
+          // fontWeight: "500",
+          color: "white",
+          // margin: "auto",
+          padding: "0px",
+          position: "none",
+          zIndex: 3,
+          // viewBox:"0 0 0 0"
+        }}
+        // fontSize="small"
+      ></ScrollToTop> */}
+
       <Typewriters />
-      <Skilled/>
+      <Skilled />
       {/* <About /> */}
       <Skills />
       <Projects />

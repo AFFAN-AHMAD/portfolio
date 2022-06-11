@@ -8,6 +8,7 @@ background:${props => props.theme == "light" ? "#1a202c" : "#b7b6bb"};
 color:${props => props.theme == "dark" ? "#10101a" : "whitesmoke"};
 padding:50px 0px;
 /* box-shadow: 2px 2px 5px 10px darkgray; */
+box-sizing: border-box;
 `
 export const H1tag = styled.h1`
 height:60px;

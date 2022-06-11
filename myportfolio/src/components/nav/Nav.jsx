@@ -11,6 +11,7 @@ import {
   NameDiv,
   TagsDiv,
   ResDiv,
+  AtagDiv,
   LightDiv,
   DarkDiv,
   Atag,
@@ -22,9 +23,11 @@ function Nav() {
   return (
     <>
       <Navbar theme={theme}>
+        <AtagDiv>
+
+    
         <NameDiv>Affan Ahmad</NameDiv>
         <ResDiv>
-          <h5>
             <Atag
               theme={theme}
               href="https://drive.google.com/file/d/1LG4uS-jFIUFDUm34wsjZeWmdb-O_F-Ov/view?usp=sharing"
@@ -32,8 +35,9 @@ function Nav() {
             >
               View CV
             </Atag>
-          </h5>{" "}
-        </ResDiv>
+       
+          </ResDiv>
+          </AtagDiv>
         <TagsDiv>
           <a>
             <div onClick={() => scroll.scrollToTop()}>
@@ -83,16 +87,17 @@ function Nav() {
           <LightDiv
             onClick={handleClick}
             theme={theme}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", margin: "0px" }}
           >
-            <LightModeIcon></LightModeIcon>
+            <LightModeIcon fontSize="small"></LightModeIcon>
           </LightDiv>
           <DarkDiv
             onClick={handleClick}
             theme={theme}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", margin:"0px" }}
+           
           >
-            <DarkModeIcon></DarkModeIcon>
+            <DarkModeIcon fontSize="small"></DarkModeIcon>
           </DarkDiv>
         </div>
         

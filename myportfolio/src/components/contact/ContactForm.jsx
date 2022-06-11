@@ -10,7 +10,7 @@ function ContactForm() {
   }
   const SubmitBtn = styled.div`
   
-  margin:auto; 
+  margin-left:80px; 
   /* From uiverse.io by @adamgiebl */
 button {
  font-family: inherit;
