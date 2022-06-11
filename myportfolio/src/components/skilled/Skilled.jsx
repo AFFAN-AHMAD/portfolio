@@ -7,7 +7,7 @@ function Skilled() {
   const MainDIv = styled.div`
     width: 100%;
     height: auto;
-    background: ${(props) => (props.theme == "light" ? "#1a202c" : "#b7b6bb")};
+    background: ${(props) => (props.theme == "light" ? "#1a202c" : "#fcf3a6")};
     color: ${(props) => (props.theme == "dark" ? "black" : "white")};
     padding: 60px 0px 40px 0px;
     /* box-shadow: 2px 2px 5px 10px darkgray; */
@@ -47,7 +47,7 @@ function Skilled() {
             has worked on various projects some of them you can check in the
             project section.
           </h3>
-          <p class="text-title">Affan Ahmad</p>
+          <p >Affan Ahmad</p>
         </div>
       </div>
     </MainDIv>

@@ -14,13 +14,13 @@ function Home() {
     <div
       style={{
         boxSizing: "borderBox",
-        border: "1px solid red",
+        // border: "1px solid red",
         margin: "0",
         padding: "0",
         width: "100%",
       }}
     >
-      {/* <ScrollToTop
+      <ScrollToTop
         smooth
         style={{
           backgroundColor: "gray",
@@ -35,7 +35,7 @@ function Home() {
           // viewBox:"0 0 0 0"
         }}
         // fontSize="small"
-      ></ScrollToTop> */}
+      ></ScrollToTop>
 
       <Typewriters />
       <Skilled />

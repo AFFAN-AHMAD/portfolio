@@ -222,7 +222,7 @@ function Projects() {
               {" "}
               <Atag
                 theme={theme}
-                href="https://precious-biscotti-be61c5.netlify.app/feature.html"
+                href="https://tata1mg-lyart.vercel.app/feature.html"
                 target="_blank"
               >
                 {" "}

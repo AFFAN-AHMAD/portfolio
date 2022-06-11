@@ -7,7 +7,7 @@ height:80px;
 /* border:1px solid red; */
 position:sticky;
 top:0px;
-background:${props => props.theme == "light" ? "white" : "darkgray"};
+background:${props => props.theme == "light" ? "white" : "whitesmoke"};
 color:${props => props.theme == "dark" ? "#10101a" : "black"};
 margin:0;
 padding:0;
@@ -30,6 +30,7 @@ height:100%;
 font-size: 60px;
 margin: 0;
 padding:0;
+padding-left:10px;
 font-style: italic;
 font-family: raleway sans-serif;
 box-sizing: border-box;
@@ -109,7 +110,7 @@ background-color: ${props => props.theme == "dark" ?"":""};
 /* box-sizing: border-box; */
 
 /* text-align: left; */
-border:1px solid red;
+/* border:1px solid red; */
 &:hover {
     border: 2px solid black;
 padding: 3px;
