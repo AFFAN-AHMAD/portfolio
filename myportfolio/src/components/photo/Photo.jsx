@@ -7,7 +7,7 @@ function Photo() {
     <>
       <PhotoDiv>
         {" "}
-        <Image src={require("./grayphoto.png")}/>
+        <Image src={require("./new.jpg")}/>
       </PhotoDiv>
     </>
   );

@@ -24,13 +24,12 @@ function Skilled() {
     <MainDIv theme={theme} >
       {/* <h1>About</h1> */}
       <div class="card" style={{ width: "80%", margin: "auto" }} id="about">
-        <img class="card-img" src={require("../photo/grayphoto.png")} />
-
-        <div class="card-info">
+        <img style={{ width: "350px", height: "300px" , marginBottom:"-10px", paddingBottom:"" }} class="card-img" src={require("../photo/new.jpg")} />
+        <div class="card-info" style={{marginTop:"-80px"}}>
           <h3 class="text-body">
             {" "}
             hi!{" "}
-            <img
+            <img 
               src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
               width="30px"
             ></img>
@@ -47,7 +46,7 @@ function Skilled() {
             has worked on various projects some of them you can check in the
             project section.
           </h3>
-          <p >Affan Ahmad</p>
+         
         </div>
       </div>
     </MainDIv>

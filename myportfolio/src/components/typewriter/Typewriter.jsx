@@ -6,7 +6,7 @@ function Typewriters() {
     const { theme } = useContext(ThemeContext);
 
   return (
-    <TypeDiv theme={theme} >
+    <TypeDiv theme={theme}  style={{height:"350px"}}>
           <h1>
         I am 
         <i>
