@@ -30,7 +30,7 @@ function Nav() {
         <ResDiv>
             <Atag
               theme={theme}
-              href="https://drive.google.com/file/d/1_DRUN2qg2LSao9X-elJyn_cYhduee1PR/view?usp=sharing"
+              href="https://drive.google.com/file/d/12GmmWoJA7iwHJjinqdyomGOSS8R0TQo1/view?usp=sharing"
               target="_blank"
             >
               View CV

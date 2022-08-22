@@ -99,7 +99,7 @@ button:active {
       <NameDiv>
 
         <textarea id="message" name="message" class="input" style={{minWidth:"200px",overflow:"hidden",maxWidth:"200px",minHeight:"30px",maxHeight:"200px"}}/>
-        <label htmlFor="email"  class="user-label">...send me ur wishes </label>
+        <label htmlFor="email"  class="user-label">post your kind words</label>
 
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       </NameDiv>
