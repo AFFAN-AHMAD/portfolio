@@ -27,7 +27,7 @@ function Contact() {
   const { theme } = useContext(ThemeContext);
 
   function copyToClipboard() {
-    toast.info("Email copied to clipboard");
+    toast.success("Email copied to clipboard");
   }
 
   return (
