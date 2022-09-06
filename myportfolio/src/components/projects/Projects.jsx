@@ -73,7 +73,7 @@ function Projects() {
 							<li>
 								Implemented features such as pagination, sorting and filtering.
 							</li>
-							<li>Written a proper readme for a better user experience</li>
+							<li>Written a proper readme for a better user experience.</li>
 							<li>
 								Written a{" "}
 								<a

@@ -5,19 +5,18 @@ import { ThemeContext } from "../../context/themeContext";
 
 function Skilled() {
   const MainDIv = styled.div`
-    width: 100%;
-    height: auto;
-    background: ${(props) => (props.theme == "light" ? "#1a202c" : "#fcf3a6")};
-    color: ${(props) => (props.theme == "dark" ? "black" : "white")};
-    padding: 60px 0px 40px 0px;
-    /* box-shadow: 2px 2px 5px 10px darkgray; */
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box
-
-  `;
+		width: 100%;
+		height: auto;
+		background: ${(props) => (props.theme == "light" ? "#0a0a0a" : "#fcf3a6")};
+		color: ${(props) => (props.theme == "dark" ? "black" : "white")};
+		padding: 60px 0px 40px 0px;
+		/* box-shadow: 2px 2px 5px 10px darkgray; */
+		align-items: center;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	`;
   const { theme } = useContext(ThemeContext);
 
   return (

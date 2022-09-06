@@ -1,13 +1,13 @@
 import styled from "styled-components";
 export const SkillsDiv = styled.div`
-  width: 100%;
-  height: auto;
-  background: ${(props) => (props.theme == "light" ? "#345c5f" : "#8dd8eb")};
-  color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
-  padding: 50px 0px;
-  box-sizing:border-box
+	width: 100%;
+	height: auto;
+	background: ${(props) => (props.theme == "light" ? "#1d1d25" : "#8dd8eb")};
+	color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
+	padding: 50px 0px;
+	box-sizing: border-box;
 
-  /* box-shadow: 2px 2px 5px 10px darkgray; */
+	/* box-shadow: 2px 2px 5px 10px darkgray; */
 `;
 export const H1tag = styled.h1`
   height: 60px;
@@ -60,16 +60,16 @@ export const H5tag = styled.h5`
 
 
 export const ContentDiv = styled.div`
-/* width:200px; */
-height:120px;
-box-sizing: border-box;
-background-color: white;
-padding:30px 20px;
-text-align: center;
-margin: 20px 0px;
-border-radius: 10px;
-box-shadow:  10px 10px black;
-&:hover{transform:scale(1.15)}
-
-
-`
+	/* width:200px; */
+	height: 120px;
+	box-sizing: border-box;
+	background-color: white;
+	padding: 30px 20px;
+	text-align: center;
+	margin: 20px 0px;
+	border-radius: 10px;
+	box-shadow: 5px 5px #1a2421;
+	&:hover {
+		transform: scale(1.15);
+	}
+`;
