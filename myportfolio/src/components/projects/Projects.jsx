@@ -26,7 +26,7 @@ function Projects() {
 			id="projects"
 		>
 			<div style={{ padding: "30px" }}></div>
-			<H1tag>Projects</H1tag>
+			<H1tag style={{ letterSpacing: "5px" }}>Projects</H1tag>
 			{/* 1st project */}
 
 			<ProDiv

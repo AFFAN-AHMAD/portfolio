@@ -4,8 +4,7 @@ export const ContactsDiv = styled.div`
 	width: 100vw;
 	height: auto;
 	box-sizing: border-box;
-	background: ${(props) =>
-		props.theme == "light" ? "#272729" : "whitesmoke"};
+	background: ${(props) => (props.theme == "light" ? "#272729" : "whitesmoke")};
 	color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
 	padding: 30px 0px;
 	/* box-shadow: 2px 2px 5px 10px darkgray; */

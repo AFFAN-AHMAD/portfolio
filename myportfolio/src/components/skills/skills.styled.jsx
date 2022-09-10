@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const SkillsDiv = styled.div`
 	width: 100%;
 	height: auto;
-	background: ${(props) => (props.theme == "light" ? "#1d1d25" : "#8dd8eb")};
+	background: ${(props) => (props.theme == "light" ? "#000000" : "#8dd8eb")};
 	color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
 	padding: 50px 0px;
 	box-sizing: border-box;
@@ -72,4 +72,4 @@ export const ContentDiv = styled.div`
 	&:hover {
 		transform: scale(1.15);
 	}
-`;
+`
