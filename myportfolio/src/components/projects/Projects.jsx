@@ -14,7 +14,9 @@ import {
 	DescDiv,
 	Atag,
 	NameDiv,
+	
 } from "./projects.styled";
+
 function Projects() {
 	const { theme } = useContext(ThemeContext);
 	const { toshow, toshow1, toshow2, handleHover, handleHover1, handleHover2 } =

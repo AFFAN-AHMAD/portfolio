@@ -2,7 +2,7 @@ import React from "react";
 import { createContext, useState } from "react";
 export const HoverContext = createContext();
 export const HoverProvider = ({ children }) => {
-    const [home,setHome]  = useState(false);
+    const [home,setHome]  = useState(true);
     const [about, setAbout] = useState(false);
     const [skills, setSkills] = useState(false);
     const [projects, setProjects] = useState(false);
