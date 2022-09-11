@@ -17,39 +17,60 @@ function Skilled() {
 		padding: 0;
 		box-sizing: border-box;
 	`;
+  const Img = styled.img`
+  // width: "350px", height: "300px", marginBottom: "-10px", paddingBottom: "" }}
+    width:350px;
+    height:300px;
+    margin-bottom:-10px;
+    border-radius:50%
+  `
   const { theme } = useContext(ThemeContext);
 
   return (
-    <MainDIv theme={theme} >
-      {/* <h1>About</h1> */}
-      <div class="card" style={{ width: "80%", margin: "auto" }} id="about">
-        <img style={{ width: "350px", height: "300px" , marginBottom:"-10px", paddingBottom:"" }} class="card-img" src={require("../photo/new.jpg")} />
-        <div class="card-info" style={{marginTop:"-80px"}}>
-          <h3 class="text-body">
-            {" "}
-            hi{" "}
-            <img 
-              src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
-              width="30px"
-            ></img>
-            this is{" "}
-            <b>
-              <i>Affan Ahmad</i>
-            </b>
-            , an aspiring{" "}
-            <b>
-              <i>Full Stack Web Developer</i>
-            </b>
-            . Affan is a quick learner, enthusiastic person ,a team player and
-            passionate about coding. He is having 3000+ hours of hands on coding. He
-            has worked on various projects some of them you can check in the
-            projects section.
-          </h3>
-         
-        </div>
-      </div>
-    </MainDIv>
-  );
+		<MainDIv theme={theme}>
+			{/* <h1>About</h1> */}
+			<div
+				class="card"
+				style={{ width: "80%", margin: "auto" }}
+				id="about"
+			>
+				<img
+					style={{
+					
+						marginBottom: "-10px",
+						paddingBottom: "",
+					}}
+					class="card-img"
+					src={require("../photo/new.jpg")}
+				/>
+				<div
+					class="card-info"
+					style={{ marginTop: "-80px" }}
+				>
+					<h3 class="text-body">
+						{" "}
+						hi{" "}
+						<img
+							src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
+							width="30px"
+						></img>
+						this is{" "}
+						<b>
+							<i>Affan Ahmad</i>
+						</b>
+						, an aspiring{" "}
+						<b>
+							<i>Full Stack Web Developer</i>
+						</b>
+						. Affan is a quick learner, enthusiastic person ,a team player and
+						passionate about coding. He is having 3000+ hours of hands on
+						coding. He has worked on various projects some of them you can check
+						in the projects section.
+					</h3>
+				</div>
+			</div>
+		</MainDIv>
+	);
 }
 
 export default Skilled;
