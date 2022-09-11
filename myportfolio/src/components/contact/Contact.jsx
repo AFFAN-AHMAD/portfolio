@@ -8,34 +8,36 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { TabScrollButton } from "@mui/material";
 import {
-  ContactsDiv,
-  H1tag,
-  DescDiv,
-  ContactformDiv,
-  EmailDiv,
-  MobDiv,
-  MediumDiv,
-  MediumImg,
-  MediumDiv2,
-  ContactLink,
-  MainDiv,
-  IconsDiv
+	ContactsDiv,
+	H1tag,
+	DescDiv,
+	ContactformDiv,
+	EmailDiv,
+	MobDiv,
+	MediumDiv,
+	MediumImg,
+	MediumDiv2,
+	ContactLink,
+	MainDiv,
+	IconsDiv,
 } from "./contact.styled";
 import { requirePropFactory } from "@mui/material";
 import ContactForm from "./ContactForm";
 function Contact() {
-  const { theme } = useContext(ThemeContext);
+	const { theme } = useContext(ThemeContext);
 
-  function copyToClipboard() {
-    toast.success("Email copied to clipboard");
-  }
+	function copyToClipboard() {
+		toast.success("Email copied to clipboard");
+	}
 
-  return (
+	return (
 		<ContactsDiv
 			theme={theme}
 			id="contact"
 		>
-			<H1tag style={{ letterSpacing: "5px" }}>Let's Get Connected</H1tag>
+			<H1tag style={{ letterSpacing: "5px", marginBottom: "10px" }}>
+				Let's Get Connected
+			</H1tag>
 			{/* div containing all the elements other than Heading */}
 			<MainDiv>
 				<ContactformDiv
@@ -46,7 +48,7 @@ function Contact() {
 						alignItems: "center",
 						alignSelf: "center",
 						margin: "auto",
-						width: "50%",
+						width: "40%",
 					}}
 				>
 					<ContactForm></ContactForm>

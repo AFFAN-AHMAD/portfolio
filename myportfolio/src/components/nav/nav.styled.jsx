@@ -6,11 +6,11 @@ width: 100%;
 height:80px;
 /* border:1px solid red; */
 position:sticky;
-top:0%;
+top:0px;
 background:${props => props.theme == "light" ? "white" : "whitesmoke"};
 color:${props => props.theme == "dark" ? "#10101a" : "black"};
 margin:0;
-// padding:10px 0px 0px 0px;
+padding:0;
 z-index:2;
 display: flex;
 box-sizing: border-box;
