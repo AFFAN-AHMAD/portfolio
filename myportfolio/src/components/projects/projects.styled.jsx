@@ -31,7 +31,7 @@ export const ProDiv = styled.div`
 `;
 export const ImgDiv = styled.div`
 	/* border:1px solid black; */
-	width: 60%;
+	width: 50%;
 	height: 100%;
 	@media screen and (max-width: 600px) {
 		width: 100%;
@@ -41,7 +41,7 @@ export const ImgDiv = styled.div`
 
 export const DetailsDiv = styled.div`
 	/* border:1px solid brown; */
-	width: 40%;
+	width: 50%;
 	height: 100%;
 	position: relative;
 	box-sizing: border-box;
