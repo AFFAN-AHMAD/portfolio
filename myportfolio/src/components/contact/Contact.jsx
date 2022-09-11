@@ -40,22 +40,14 @@ function Contact() {
 			</H1tag>
 			{/* div containing all the elements other than Heading */}
 			<MainDiv>
-				<ContactformDiv
-					style={{
-						textAlign: "center",
-						alignContent: "center",
-						// border: "1px solid green",
-						alignItems: "center",
-						alignSelf: "center",
-						margin: "auto",
-						width: "40%",
-					}}
-				>
+
+				<ContactformDiv>
+
 					<ContactForm></ContactForm>
 				</ContactformDiv>
 				{/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;
-          CopyToClipboardfrom react-copy-to-clipboard;copyToClipboard is a function for triggering toast ;
-          ContentCopyIcon from Material ui */}
+          			CopyToClipboardfrom react-copy-to-clipboard;copyToClipboard is a function for triggering toast ;
+          			ContentCopyIcon from Material ui */}
 				<DescDiv>
 					<EmailDiv>
 						<ToastContainer />

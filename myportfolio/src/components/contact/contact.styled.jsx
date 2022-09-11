@@ -8,6 +8,7 @@ export const ContactsDiv = styled.div`
 	color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
 	padding: 30px 0px;
 	/* box-shadow: 2px 2px 5px 10px darkgray; */
+ 
 `;
 export const MainDiv = styled.div`
 	margin-bottom: 50px;
@@ -17,13 +18,25 @@ export const MainDiv = styled.div`
 	justify-content: space-between;
 
 	box-sizing: border-box;
-	@media screen and (max-width: 850px) {
-		display: block;
+	@media screen and (max-width: 850px) and (min-width: 250px) {
+		display: grid;
+    width:50%;
+    grid-template-columns:repeat(1,1fr)
+
 		height: auto;
 		align-self: center;
 		align-items: center;
 		text-align: center;
+
+    margin:auto
 	}
+	// @media screen and (max-width: 400px) {
+	// 		display: grid;
+  //   grid-template-columns:repeat(1,1fr)
+	// 	height: auto;
+		
+	// }
+
 `;
 
 export const ContactformDiv = styled.div`
@@ -35,7 +48,13 @@ export const ContactformDiv = styled.div`
 	width: 50%;
 
 	@media screen and (max-width: 850px) {
-		width: 70%;
+		width: 30%;
+
+		margin: auto 0px 0px 0px;
+	}
+	@media screen and (max-width: 400px) {
+		margin-left: 0px;
+
 	}
 `;
 export const DescDiv = styled.div`
@@ -44,11 +63,8 @@ export const DescDiv = styled.div`
 	margin-top: 40px;
 	padding: 30px;
 	box-sizing: border-box;
-	text-align: left;
-	align-items: left;
-	align-content: left;
-	align-self: left;
-	/* border: 1px solid green; */
+
+
 	@media screen and (max-width: 850px) {
 		display: block;
 		height: auto;
@@ -71,7 +87,8 @@ export const EmailDiv = styled.div`
 	text-align: center;
 	align-items: center;
 	gap: 4px;
-	margin: 10px;
+	// margin: 10px;
+  
 	box-sizing: border-box;
 	@media screen and (max-width: 850px) {
 		justify-content: center;
