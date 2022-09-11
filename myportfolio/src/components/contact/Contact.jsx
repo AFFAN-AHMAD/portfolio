@@ -35,10 +35,14 @@ function Contact() {
 			theme={theme}
 			id="contact"
 		>
-			<H1tag style={{ letterSpacing: "5px" }}>Let's Get Connected</H1tag>
+			<H1tag style={{ letterSpacing: "5px", marginBottom: "10px" }}>
+				Let's Get Connected
+			</H1tag>
 			{/* div containing all the elements other than Heading */}
 			<MainDiv>
+
 				<ContactformDiv>
+
 					<ContactForm></ContactForm>
 				</ContactformDiv>
 				{/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;

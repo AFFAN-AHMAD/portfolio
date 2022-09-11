@@ -16,15 +16,18 @@ export const MainDiv = styled.div`
 	margin: auto;
 	width: 80%;
 	justify-content: space-between;
+
 	box-sizing: border-box;
 	@media screen and (max-width: 850px) and (min-width: 250px) {
 		display: grid;
     width:50%;
     grid-template-columns:repeat(1,1fr)
+
 		height: auto;
 		align-self: center;
 		align-items: center;
 		text-align: center;
+
     margin:auto
 	}
 	// @media screen and (max-width: 400px) {
@@ -33,6 +36,7 @@ export const MainDiv = styled.div`
 	// 	height: auto;
 		
 	// }
+
 `;
 
 export const ContactformDiv = styled.div`
@@ -42,6 +46,7 @@ export const ContactformDiv = styled.div`
 	align-self: center;
 	margin: auto;
 	width: 50%;
+
 	@media screen and (max-width: 850px) {
 		width: 30%;
 
@@ -49,6 +54,7 @@ export const ContactformDiv = styled.div`
 	}
 	@media screen and (max-width: 400px) {
 		margin-left: 0px;
+
 	}
 `;
 export const DescDiv = styled.div`
@@ -57,6 +63,7 @@ export const DescDiv = styled.div`
 	margin-top: 40px;
 	padding: 30px;
 	box-sizing: border-box;
+
 
 	@media screen and (max-width: 850px) {
 		display: block;
@@ -95,8 +102,6 @@ export const MobDiv = styled.div`
 	display: flex;
 	text-align: center;
 	align-items: center;
-	
-
 	gap: 4px;
 	margin: 10px;
 	box-sizing: border-box;
@@ -110,8 +115,6 @@ export const MobDiv = styled.div`
 export const IconsDiv = styled.div`
 	display: flex;
 	gap: 10px;
-	
-
 	margin: 10px;
 	/* border:1px solid red; */
 	@media screen and (max-width: 850px) {

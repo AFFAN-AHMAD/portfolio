@@ -70,8 +70,8 @@ function Projects() {
 							<h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
 								Areas of responsibility:
 							</h5>
-							<li>To lead the team of 4 members including me.</li>
-							<li>Creating of Products Page</li>
+							<li>Lead the team </li>
+							<li>Created of Products Page</li>
 							<li>
 								Implemented features such as pagination, sorting and filtering.
 							</li>
@@ -162,10 +162,10 @@ function Projects() {
 							<h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
 								Areas of responsibility:
 							</h5>
-							<li>Creation of Men's Product Page</li>
-							<li>Creation of Men's Product Details Page</li>
-							<li>Creation of Women's Product Page</li>
-							<li>Creation of Women's Product Detail's page</li>
+							<li>Created Men's Product Page</li>
+							<li>Created Men's Product Details Page</li>
+							<li>Created Women's Product Page</li>
+							<li>Created Women's Product Detail's page</li>
 						</ul>
 						<p> Team of 3 members, executed it in 6 days.</p>
 						<h5>inspired by Myntra</h5>
@@ -246,7 +246,7 @@ function Projects() {
 							</h5>
 							<li>Responsible for the UI of the website</li>
 							<li>
-								created a sticky Navbar and imported it into all the pages
+								Created a sticky Navbar and imported it into all the pages
 							</li>
 							<li>Created Cart page</li>
 						</ul>
