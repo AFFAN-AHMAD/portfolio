@@ -76,7 +76,7 @@ function Nav() {
 							bord={skills}
 							style={{ letterSpacing: "1px" }}
 						>
-							skills
+							techs
 						</BorderToNavDiv>
 					</Link>
 					<Link

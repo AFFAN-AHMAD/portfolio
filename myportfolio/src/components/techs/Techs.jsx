@@ -7,10 +7,7 @@ import {
 	BottomSkillsDiv,
 	H5tag,
 	ContentDiv,
-} from "./skills.styled";
-import "animate.css/animate.min.css";
-import ScrollAnimation from "react-animate-on-scroll";
-import Marquee from "react-fast-marquee";
+} from "./techs.styled";
 import react from "./frontend/react.svg";
 import mui from "./frontend/materialui.svg";
 import vite from "./frontend/vitejs.svg";
@@ -19,9 +16,9 @@ import redis from "./frontend/redis.svg";
 import next from "./frontend/next.svg";
 import socket from "./frontend/socket.svg";
 import jwt from "./frontend/jwt.svg";
-function Skills() {
+import Plx from "react-plx";
+const Techs = () => {
 	const { theme } = useContext(ThemeContext);
-
 	return (
 		<SkillsDiv
 			theme={theme}
@@ -29,19 +26,45 @@ function Skills() {
 		>
 			<div style={{ padding: "30px" }}></div>
 
-			<H1tag style={{ letterSpacing:"5px" }}>Techs & Frameworks</H1tag>
-			<Marquee
-				gradient={false}
-				speed={30}
-				pauseOnHover={true}
-				pauseOnClick={true}
-				delay={0}
-				play={true}
-				direction="left"
-			>
+			<H1tag style={{ letterSpacing: "5px" }}>Techs & Frameworks</H1tag>
+			<>
+				{/* top skills */}
 				<TopSkillsDiv>
+					{/* Html 5 */}
+					<ContentDiv theme={theme}>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img
+								src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+								width="40"
+								height="40"
+								alt="HTML5"
+							/>
+						</a>
+						<H5tag>HTML5</H5tag>
+					</ContentDiv>
+					{/* Css3 */}
+					<ContentDiv theme={theme}>
+						<a
+							href="https://www.w3.org/TR/CSS/#css"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img
+								src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+								width="40"
+								height="40"
+								alt="CSS3"
+							/>
+						</a>
+						<H5tag>CSS3</H5tag>
+					</ContentDiv>
+
 					{/* Javascript */}
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 							target="_blank"
@@ -58,26 +81,9 @@ function Skills() {
 						<H5tag>JavaScript</H5tag>
 					</ContentDiv>
 
-					{/* Html 5 */}
-					<ContentDiv>
-						<a
-							href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img
-								src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-								width="40"
-								height="40"
-								alt="HTML5"
-							/>
-						</a>
-						<H5tag>HTML5</H5tag>
-					</ContentDiv>
-
 					{/*  React*/}
 
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://reactjs.org/"
 							target="_blank"
@@ -93,25 +99,9 @@ function Skills() {
 						<H5tag>React</H5tag>
 					</ContentDiv>
 
-					{/* Css3 */}
-					<ContentDiv>
-						<a
-							href="https://www.w3.org/TR/CSS/#css"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img
-								src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-								width="40"
-								height="40"
-								alt="CSS3"
-							/>
-						</a>
-						<H5tag>CSS3</H5tag>
-					</ContentDiv>
 					{/* Redux */}
 
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://redux.js.org/"
 							target="_blank"
@@ -128,7 +118,7 @@ function Skills() {
 					</ContentDiv>
 
 					{/* node.js */}
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://nodejs.org/en/"
 							target="_blank"
@@ -144,7 +134,7 @@ function Skills() {
 						<H5tag>Node.js</H5tag>
 					</ContentDiv>
 					{/* express.js */}
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://expressjs.com/"
 							target="_blank"
@@ -160,7 +150,7 @@ function Skills() {
 						<H5tag>Express.js</H5tag>
 					</ContentDiv>
 					{/* mongoDb */}
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://www.mongodb.com/"
 							target="_blank"
@@ -176,7 +166,7 @@ function Skills() {
 						<H5tag>MongoDB</H5tag>
 					</ContentDiv>
 					{/* typescript */}
-					<ContentDiv>
+					<ContentDiv theme={theme}>
 						<a
 							href="https://www.typescriptlang.org/"
 							target="_blank"
@@ -191,21 +181,15 @@ function Skills() {
 						</a>
 						<H5tag>TypeScript</H5tag>
 					</ContentDiv>
-				</TopSkillsDiv>
-			</Marquee>
-			<Marquee
-				gradient={false}
-				speed={80}
-				pauseOnHover={true}
-				pauseOnClick={true}
-				delay={0}
-				play={true}
-				direction="left"
-			>
-				<BottomSkillsDiv>
+
+					{/* bottom skills */}
+					{/* <BottomSkillsDiv> */}
 					{/* git */}
-					<ContentDiv>
-						<a href="https://git-scm.com/">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://git-scm.com/"
+							target="_blank"
+						>
 							<img
 								src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
 								width="40"
@@ -216,8 +200,11 @@ function Skills() {
 						<H5tag>Git</H5tag>
 					</ContentDiv>
 					{/* socket */}
-					<ContentDiv>
-						<a href="https://www.linux.org/">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://socket.io/"
+							target="_blank"
+						>
 							<img
 								src={socket}
 								width="40"
@@ -228,8 +215,11 @@ function Skills() {
 						<H5tag>Web Sockets</H5tag>
 					</ContentDiv>
 					{/* next.js */}
-					<ContentDiv>
-						<a href="https://docs.microsoft.com/en-us/powershell/">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://nextjs.org/docs"
+							target="_blank"
+						>
 							<img
 								src={next}
 								width="40"
@@ -241,8 +231,11 @@ function Skills() {
 					</ContentDiv>
 
 					{/* jwt */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://jwt.io/introduction"
+							target="_blank"
+						>
 							<img
 								style={{ background: "whitesmoke" }}
 								src={jwt}
@@ -254,8 +247,11 @@ function Skills() {
 						<H5tag>JWT</H5tag>
 					</ContentDiv>
 					{/* material ui */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://mui.com/"
+							target="_blank"
+						>
 							<img
 								style={{ background: "whitesmoke" }}
 								src={mui}
@@ -267,8 +263,8 @@ function Skills() {
 						<H5tag>Material UI</H5tag>
 					</ContentDiv>
 					{/* Redis */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a href="https://redis.io/docs/">
 							<img
 								style={{ background: "whitesmoke" }}
 								src={redis}
@@ -280,8 +276,11 @@ function Skills() {
 						<H5tag>Redis</H5tag>
 					</ContentDiv>
 					{/* postman */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://github.com/postmanlabs/postman-docs"
+							target="_blank"
+						>
 							<img
 								style={{ background: "whitesmoke" }}
 								src={require("./backend/postman.png")}
@@ -293,8 +292,11 @@ function Skills() {
 						<H5tag>Postman</H5tag>
 					</ContentDiv>
 					{/* mongoose */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://mongoosejs.com/docs/"
+							target="_blank"
+						>
 							<img
 								style={{ background: "whitesmoke" }}
 								src={require("./backend/mongoose.png")}
@@ -306,8 +308,11 @@ function Skills() {
 						<H5tag>Mongoose</H5tag>
 					</ContentDiv>
 					{/* chakra */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://chakra-ui.com/getting-started"
+							target="_blank"
+						>
 							<img
 								style={{ background: "whitesmoke" }}
 								src={require("./frontend/chakraui.png")}
@@ -319,8 +324,11 @@ function Skills() {
 						<H5tag>Chakra UI</H5tag>
 					</ContentDiv>
 					{/* npm */}
-					<ContentDiv>
-						<a href="">
+					<ContentDiv theme={theme}>
+						<a
+							href="https://docs.npmjs.com/"
+							target="_blank"
+						>
 							<img
 								style={{ background: "whitesmoke" }}
 								src={npm}
@@ -331,10 +339,27 @@ function Skills() {
 						</a>
 						<H5tag>Npm</H5tag>
 					</ContentDiv>
-				</BottomSkillsDiv>
-			</Marquee>
+					{/* vite */}
+
+					<ContentDiv theme={theme}>
+						<a
+							href="https://vitejs.dev/"
+							target="_blank"
+						>
+							<img
+								style={{ background: "whitesmoke" }}
+								src={vite}
+								width="40"
+								height="40"
+								alt="npm"
+							/>
+						</a>
+						<H5tag>Vite</H5tag>
+					</ContentDiv>
+				</TopSkillsDiv>
+			</>
 		</SkillsDiv>
 	);
-}
+};
 
-export default Skills;
+export default Techs;
