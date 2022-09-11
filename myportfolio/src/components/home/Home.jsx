@@ -3,7 +3,6 @@ import About from "../about/About";
 import Contact from "../contact/Contact";
 import Photo from "../photo/Photo";
 import Projects from "../projects/Projects";
-import Skills from "../skills/Skills";
 import Typewriter from "typewriter-effect";
 import ScrollToTop from "react-scroll-to-top";
 import ContactForm from "../contact/ContactForm";
@@ -41,8 +40,6 @@ function Home() {
 
       <Typewriters />
       <Skilled />
-      {/* <About /> */}
-      {/* <Skills /> */}
       <Techs />
       <Projects />
       <Contact />
