@@ -23,13 +23,13 @@ export const TopSkillsDiv = styled.div`
 	gap: 30px;
 	margin: auto;
 	justify-content: center;
-	@media screen and (max-width: 720px) and (min-width: 400px) {
+	@media screen and (max-width: 720px) and (min-width: 500px) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto;
 		width: 60%;
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 500px) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;

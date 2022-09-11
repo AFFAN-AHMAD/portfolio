@@ -17,8 +17,23 @@ import next from "./frontend/next.svg";
 import socket from "./frontend/socket.svg";
 import jwt from "./frontend/jwt.svg";
 import Plx from "react-plx";
+import { HoverContext } from "../../context/hoverContext";
+
 const Techs = () => {
 	const { theme } = useContext(ThemeContext);
+	 const {
+			home,
+			onHome,
+			about,
+			onAbout,
+			projects,
+			onProjects,
+			skills,
+			onSkills,
+			contacts,
+			onContacts,
+		} = useContext(HoverContext);
+// onSkills()
 	return (
 		<SkillsDiv
 			theme={theme}

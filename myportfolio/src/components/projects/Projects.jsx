@@ -1,4 +1,4 @@
-import React, { useContext, video } from "react";
+import React, { useContext, useEffect, video } from "react";
 import { ThemeContext } from "../../context/themeContext";
 import { LinkContext } from "../../context/linkContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -16,11 +16,26 @@ import {
 	NameDiv,
 	
 } from "./projects.styled";
+import { HoverContext } from "../../context/hoverContext";
 
 function Projects() {
 	const { theme } = useContext(ThemeContext);
+	  const {
+			home,
+			onHome,
+			about,
+			onAbout,
+			projects,
+			onProjects,
+			skills,
+			onSkills,
+			contacts,
+			onContacts,
+		} = useContext(HoverContext);
+
 	const { toshow, toshow1, toshow2, handleHover, handleHover1, handleHover2 } =
 		useContext(LinkContext);
+	// useEffect(()=>{onProjects();},[])
 
 	return (
 		<ProjectsDiv
