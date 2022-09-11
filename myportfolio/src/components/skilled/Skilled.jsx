@@ -27,7 +27,7 @@ function Skilled() {
         <div class="card-info" style={{marginTop:"-80px"}}>
           <h3 class="text-body">
             {" "}
-            hi!{" "}
+            hi{" "}
             <img 
               src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
               width="30px"
@@ -41,9 +41,9 @@ function Skilled() {
               <i>Full Stack Web Developer</i>
             </b>
             . Affan is a quick learner, enthusiastic person ,a team player and
-            passionate about coding. He is having 100+days hands on coding. He
+            passionate about coding. He is having 3000+ hours of hands on coding. He
             has worked on various projects some of them you can check in the
-            project section.
+            projects section.
           </h3>
          
         </div>

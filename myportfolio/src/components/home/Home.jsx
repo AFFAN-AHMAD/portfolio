@@ -9,6 +9,8 @@ import ScrollToTop from "react-scroll-to-top";
 import ContactForm from "../contact/ContactForm";
 import Typewriters from "../typewriter/Typewriter";
 import Skilled from "../skilled/Skilled";
+import Techs from "../techs/Techs";
+
 function Home() {
   return (
     <div
@@ -40,7 +42,8 @@ function Home() {
       <Typewriters />
       <Skilled />
       {/* <About /> */}
-      <Skills />
+      {/* <Skills /> */}
+      <Techs />
       <Projects />
       <Contact />
     </div>
