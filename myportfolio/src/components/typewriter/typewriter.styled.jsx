@@ -2,7 +2,7 @@ import styled from "styled-components"
 export const TypeDiv = styled.div`
 	width: 100%;
 	height: auto;
-	background: ${(props) => (props.theme == "light" ? "#272729" : "#8dd8eb")};
+	background: ${(props) => (props.theme == "light" ? "#272729" : "#fcf3a6")};
 	color: ${(props) => (props.theme == "dark" ? "#10101a" : "whitesmoke")};
 	padding: 50px 0px;
 	box-sizing: border-box;

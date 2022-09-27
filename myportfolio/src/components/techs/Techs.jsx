@@ -19,7 +19,7 @@ import jwt from "./frontend/jwt.svg";
 import Plx from "react-plx";
 import { HoverContext } from "../../context/hoverContext";
 
-const Techs = () => {
+const Techs = ({ref}) => {
 	const { theme } = useContext(ThemeContext);
 	 const {
 			home,
@@ -38,6 +38,8 @@ const Techs = () => {
 		<SkillsDiv
 			theme={theme}
 			id="skills"
+			class="App-section"
+			useRef={ref}
 		>
 			<div style={{ padding: "30px" }}></div>
 

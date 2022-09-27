@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, video } from "react";
+import React, { useContext, useEffect, useRef,video } from "react";
 import { ThemeContext } from "../../context/themeContext";
 import { LinkContext } from "../../context/linkContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -18,7 +18,7 @@ import {
 } from "./projects.styled";
 import { HoverContext } from "../../context/hoverContext";
 
-function Projects() {
+function Projects({ref}) {
 	const { theme } = useContext(ThemeContext);
 	  const {
 			home,
@@ -41,6 +41,8 @@ function Projects() {
 		<ProjectsDiv
 			theme={theme}
 			id="projects"
+			class="App-section"
+			useRef = {ref}
 		>
 			<div style={{ padding: "30px" }}></div>
 			<H1tag style={{ letterSpacing: "5px" }}>Projects</H1tag>

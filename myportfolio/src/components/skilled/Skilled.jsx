@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext,useRef } from "react";
 import "./skilled.css";
 import styled from "styled-components";
 import { ThemeContext } from "../../context/themeContext";
 
-function Skilled() {
-  const MainDIv = styled.div`
+function Skilled(props) {
+
+	const MainDIv = styled.div`
+  		// border:1px solid red;
 		width: 100%;
 		height: auto;
 		background: ${(props) => (props.theme == "light" ? "#0a0a0a" : "#fcf3a6")};
@@ -27,7 +29,11 @@ function Skilled() {
   const { theme } = useContext(ThemeContext);
 
   return (
-		<MainDIv theme={theme}>
+		<MainDIv
+			theme={theme}
+			useRef={props.ref}
+			class="App-section"
+		>
 			{/* <h1>About</h1> */}
 			<div
 				class="card"
@@ -36,7 +42,6 @@ function Skilled() {
 			>
 				<img
 					style={{
-					
 						marginBottom: "-10px",
 						paddingBottom: "",
 					}}

@@ -23,7 +23,7 @@ import {
 } from "./contact.styled";
 import { requirePropFactory } from "@mui/material";
 import ContactForm from "./ContactForm";
-function Contact() {
+function Contact({ref}) {
 	const { theme } = useContext(ThemeContext);
 
 	function copyToClipboard() {
@@ -34,15 +34,15 @@ function Contact() {
 		<ContactsDiv
 			theme={theme}
 			id="contact"
+			class="App-section"
+			useRef={ref}
 		>
 			<H1tag style={{ letterSpacing: "5px", marginBottom: "10px" }}>
 				Let's Get Connected
 			</H1tag>
 			{/* div containing all the elements other than Heading */}
 			<MainDiv>
-
 				<ContactformDiv>
-
 					<ContactForm></ContactForm>
 				</ContactformDiv>
 				{/* EmailDiv from styled components; Toastcontainer,CopyToClipboard  from toastify ;

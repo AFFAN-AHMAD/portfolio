@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { ThemeContext } from "../../context/themeContext";
@@ -6,21 +6,44 @@ import { HoverContext } from "../../context/hoverContext";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 import ScrollToTop from "react-scroll-to-top";
+import useScrollSpy from "react-use-scrollspy";
 import {
-  Navbar,
-  NameDiv,
-  TagsDiv,
-  ResDiv,
-  AtagDiv,
-  LightDiv,
-  DarkDiv,
-  Atag,
-  BorderToNavDiv,
+	Navbar,
+	NameDiv,
+	TagsDiv,
+	ResDiv,
+	AtagDiv,
+	LightDiv,
+	DarkDiv,
+	Atag,
+	BorderToNavDiv,
 } from "./nav.styled";
 function Nav() {
-  const { handleClick, theme } = useContext(ThemeContext);
-  const { home,onHome,about,onAbout,projects,onProjects,skills,onSkills,contacts,onContacts} = useContext(HoverContext);
-  return (
+	const sectionRefs = [
+		useRef(null),
+		useRef(null),
+		useRef(null),
+		useRef(null),
+		useRef(null),
+	];
+	const { handleClick, theme } = useContext(ThemeContext);
+	const activeSection = useScrollSpy({
+		sectionElementRefs: sectionRefs,
+		offsetPx: -80,
+	});
+	const {
+		home,
+		onHome,
+		about,
+		onAbout,
+		projects,
+		onProjects,
+		skills,
+		onSkills,
+		contacts,
+		onContacts,
+	} = useContext(HoverContext);
+	return (
 		<>
 			<Navbar theme={theme}>
 				<AtagDiv>
@@ -40,9 +63,12 @@ function Nav() {
 						<div onClick={() => scroll.scrollToTop()}>
 							{" "}
 							<BorderToNavDiv
-								onClick={onHome}
-								bord={home}
 								style={{ letterSpacing: "1px" }}
+								className={
+									activeSection === 0
+										? "App-navigation-item App-navigation-item--active"
+										: "App-navigation-item"
+								}
 							>
 								home
 							</BorderToNavDiv>
@@ -57,9 +83,13 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							onClick={onAbout}
-							bord={about}
+							
 							style={{ letterSpacing: "1px" }}
+							className={
+								activeSection === 1
+									? "App-navigation-item App-navigation-item--active"
+									: "App-navigation-item"
+							}
 						>
 							about
 						</BorderToNavDiv>
@@ -72,9 +102,13 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							onClick={onSkills}
-							bord={skills}
+							
 							style={{ letterSpacing: "1px" }}
+							className={
+								activeSection === 2
+									? "App-navigation-item App-navigation-item--active"
+									: "App-navigation-item"
+							}
 						>
 							techs
 						</BorderToNavDiv>
@@ -87,9 +121,13 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							onClick={onProjects}
-							bord={projects}
+							
 							style={{ letterSpacing: "1px" }}
+							className={
+								activeSection === 3
+									? "App-navigation-item App-navigation-item--active"
+									: "App-navigation-item"
+							}
 						>
 							projects
 						</BorderToNavDiv>
@@ -102,9 +140,13 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							onClick={onContacts}
-							bord={contacts}
+						
 							style={{ letterSpacing: "1px" }}
+							className={
+								activeSection === 4
+									? "App-navigation-item App-navigation-item--active"
+									: "App-navigation-item"
+							}
 						>
 							contact
 						</BorderToNavDiv>

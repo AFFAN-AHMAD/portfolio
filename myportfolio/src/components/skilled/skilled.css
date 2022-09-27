@@ -60,8 +60,8 @@
 }
 
 /*Hover*/
-.card:hover .card-img {
+/* .card:hover .card-img {
 	--size: 110px;
 	width: var(--size);
 	height: var(--size);
-}
+} */
