@@ -123,7 +123,7 @@ function Projects({ ref }) {
 						<p style={{ textAlign: "center", color: "whitesmoke" }}>
 							<Atag
 								theme={theme}
-								href="https://funny-week-7983-affan-ahmad.vercel.app/"
+								href="https://nykaa-clone-bice.vercel.app/"
 								target="_blank"
 							>
 								<p> Live </p>

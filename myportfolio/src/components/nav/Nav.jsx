@@ -27,10 +27,10 @@ function Nav() {
 		useRef(null),
 	];
 	const { handleClick, theme } = useContext(ThemeContext);
-	const activeSection = useScrollSpy({
-		sectionElementRefs: sectionRefs,
-		offsetPx: -80,
-	});
+	// const activeSection = useScrollSpy({
+	// 	sectionElementRefs: sectionRefs,
+	// 	offsetPx: -80,
+	// });
 	const {
 		home,
 		onHome,
@@ -47,7 +47,7 @@ function Nav() {
 		<>
 			<Navbar theme={theme}>
 				<AtagDiv>
-					<NameDiv style={{ letterSpacing: "1px" }}>Affan Ahmad</NameDiv>
+					<NameDiv style={{ letterSpacing: "2.5px" }}>Affan Ahmad</NameDiv>
 					<ResDiv>
 						<Atag
 							theme={theme}
@@ -63,12 +63,9 @@ function Nav() {
 						<div onClick={() => scroll.scrollToTop()}>
 							{" "}
 							<BorderToNavDiv
-								style={{ letterSpacing: "1px" }}
-								className={
-									activeSection === 0
-										? "App-navigation-item App-navigation-item--active"
-										: "App-navigation-item"
-								}
+								style={{ letterSpacing: "2.5px" }}
+								bord={home}
+								onClick={onHome}
 							>
 								home
 							</BorderToNavDiv>
@@ -83,13 +80,9 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							
-							style={{ letterSpacing: "1px" }}
-							className={
-								activeSection === 1
-									? "App-navigation-item App-navigation-item--active"
-									: "App-navigation-item"
-							}
+							style={{ letterSpacing: "2.5px" }}
+							bord={about}
+							onClick={onAbout}
 						>
 							about
 						</BorderToNavDiv>
@@ -102,13 +95,9 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							
-							style={{ letterSpacing: "1px" }}
-							className={
-								activeSection === 2
-									? "App-navigation-item App-navigation-item--active"
-									: "App-navigation-item"
-							}
+							style={{ letterSpacing: "2.5px" }}
+							bord={skills}
+							onClick={onSkills}
 						>
 							techs
 						</BorderToNavDiv>
@@ -121,13 +110,9 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-							
-							style={{ letterSpacing: "1px" }}
-							className={
-								activeSection === 3
-									? "App-navigation-item App-navigation-item--active"
-									: "App-navigation-item"
-							}
+							style={{ letterSpacing: "2.5px" }}
+							bord={projects}
+							onClick={onProjects}
 						>
 							projects
 						</BorderToNavDiv>
@@ -140,13 +125,9 @@ function Nav() {
 					>
 						{" "}
 						<BorderToNavDiv
-						
-							style={{ letterSpacing: "1px" }}
-							className={
-								activeSection === 4
-									? "App-navigation-item App-navigation-item--active"
-									: "App-navigation-item"
-							}
+							style={{ letterSpacing: "2.5px" }}
+							bord={contacts}
+							onClick={onContacts}
 						>
 							contact
 						</BorderToNavDiv>
