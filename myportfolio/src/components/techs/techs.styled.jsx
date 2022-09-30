@@ -63,7 +63,7 @@ export const H5tag = styled.h5`
 `;
 
 export const ContentDiv = styled.div`
-	/* width:200px; */
+	width:150px; 
 	height: 120px;
 	box-sizing: border-box;
 	background-color: white;

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef,video } from "react";
+import React, { useContext, useEffect, useRef, video } from "react";
 import { ThemeContext } from "../../context/themeContext";
 import { LinkContext } from "../../context/linkContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -14,27 +14,34 @@ import {
 	DescDiv,
 	Atag,
 	NameDiv,
-	
 } from "./projects.styled";
 import { HoverContext } from "../../context/hoverContext";
 
-function Projects({ref}) {
+function Projects({ ref }) {
 	const { theme } = useContext(ThemeContext);
-	  const {
-			home,
-			onHome,
-			about,
-			onAbout,
-			projects,
-			onProjects,
-			skills,
-			onSkills,
-			contacts,
-			onContacts,
-		} = useContext(HoverContext);
+	const {
+		home,
+		onHome,
+		about,
+		onAbout,
+		projects,
+		onProjects,
+		skills,
+		onSkills,
+		contacts,
+		onContacts,
+	} = useContext(HoverContext);
 
-	const { toshow, toshow1, toshow2, handleHover, handleHover1, handleHover2 } =
-		useContext(LinkContext);
+	const {
+		toshow,
+		toshow1,
+		toshow2,
+		toshow3,
+		handleHover,
+		handleHover1,
+		handleHover2,
+		handleHover3,
+	} = useContext(LinkContext);
 	// useEffect(()=>{onProjects();},[])
 
 	return (
@@ -42,15 +49,15 @@ function Projects({ref}) {
 			theme={theme}
 			id="projects"
 			class="App-section"
-			useRef = {ref}
+			useRef={ref}
 		>
 			<div style={{ padding: "30px" }}></div>
 			<H1tag style={{ letterSpacing: "5px" }}>Projects</H1tag>
 			{/* 1st project */}
 
 			<ProDiv
-				onMouseEnter={handleHover1}
-				onMouseLeave={handleHover1}
+				onMouseEnter={handleHover3}
+				onMouseLeave={handleHover3}
 			>
 				<ImgDiv>
 					<ImgFrame
@@ -65,7 +72,7 @@ function Projects({ref}) {
 							Nykaa
 						</h5>
 					</NameDiv>
-					<DescDiv show={toshow1}>
+					<DescDiv show={toshow3}>
 						<p>
 							Nykaa is a beauty and cosmetics website, currently leading Indian
 							markets.
@@ -109,14 +116,14 @@ function Projects({ref}) {
 						<h5>inspired by Nykaa</h5>
 					</DescDiv>
 					<LinkDiv
-						show={toshow1}
+						show={toshow3}
 						theme={theme}
 					>
 						{" "}
 						<p style={{ textAlign: "center", color: "whitesmoke" }}>
 							<Atag
 								theme={theme}
-								href="https://funny-week-7983-affan-ahmad.vercel.app/"
+								href="https://nykaa-clone-bice.vercel.app/"
 								target="_blank"
 							>
 								<p> Live </p>
