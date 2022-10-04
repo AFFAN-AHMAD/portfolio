@@ -67,7 +67,7 @@ function Skilled(props) {
 						<b>
 							<i>Full Stack Web Developer</i>
 						</b>
-						. Affan is a quick learner, enthusiastic person ,a team player and
+						. Affan is a quick learner, enthusiastic person, a team player and
 						passionate about coding. He is having 3000+ hours of hands on
 						coding. He has worked on various projects some of them you can check
 						in the projects section.
