@@ -371,7 +371,7 @@ function Projects({ ref }) {
 							{" "}
 							<Atag
 								theme={theme}
-								href="https://tata1mg-lyart.vercel.app/feature.html"
+								href="https://tata1mgcloned.netlify.app/"
 								target="_blank"
 							>
 								{" "}
