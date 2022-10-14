@@ -285,7 +285,7 @@ function Projects({ ref }) {
 							{" "}
 							<Atag
 								theme={theme}
-								href="https://nykaaman.vercel.app/"
+								href="https://velvety-babka-6c5c6d.netlify.app/"
 								target="_blank"
 							>
 								{" "}
