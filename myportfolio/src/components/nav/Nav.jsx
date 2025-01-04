@@ -47,7 +47,7 @@ function Nav() {
 		<>
 			<Navbar theme={theme}>
 				<AtagDiv>
-					<NameDiv style={{ letterSpacing: "2.5px" }}>Affan Ahmad</NameDiv>
+					<NameDiv style={{ letterSpacing: "2.5px", fontSize:'35px', height: 'auto' }}>Affan Ahmad</NameDiv>
 					<ResDiv>
 						<Atag
 							theme={theme}
@@ -133,7 +133,7 @@ function Nav() {
 						</BorderToNavDiv>
 					</Link>
 				</TagsDiv>
-				<div>
+				<div style={{ display: "flex", alignItems: "center" }}>
 					<LightDiv
 						onClick={handleClick}
 						theme={theme}

@@ -4,7 +4,6 @@ import styled from "styled-components"
 export const Navbar = styled.div`
 width: 100%;
 height:80px;
-/* border:1px solid red; */
 position:sticky;
 top:0px;
 background:${props => props.theme == "light" ? "white" : "whitesmoke"};
@@ -15,11 +14,13 @@ z-index:2;
 display: flex;
 box-sizing: border-box;
 /* box-shadow: 2px 2px 5px 10px darkgray; */
+padding: 0px 80px;
+justify-content: space-between;
 @media all and  (max-width:1030px) {
-/* border:1px solid red; */
-padding-left: 20px;
-height:150px;
-box-sizing: border-box;
+    /* border:1px solid red; */
+    padding-left: 20px;
+    height:150px;
+    box-sizing: border-box;
 }
 `
 // name div inside navbar
@@ -55,6 +56,8 @@ text-align: right;
 justify-content: right;
 box-sizing: border-box;
 font-style: italic;
+align-items: center;
+
 @media all and  (max-width:700px) {
 /* border:1px solid blue; */
 width:30%;
@@ -96,6 +99,9 @@ export const AtagDiv = styled.div`
 
 display: flex;
 height:100%;
+align-items: center;
+justify-content: space-between;
+
 @media all and  (max-width:550px) {
     display: block;
     height:100%;
@@ -121,7 +127,7 @@ text-decoration: none;
 
 `
 export const ResDiv = styled.div`
-height:50px;
+// height:50px;
 width:100px;
 padding:5px;
 margin: 20px 0px 20px 20px;

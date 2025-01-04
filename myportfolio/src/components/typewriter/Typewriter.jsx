@@ -8,24 +8,24 @@ function Typewriters() {
   return (
     <TypeDiv theme={theme}  style={{height:"350px"}}>
           <h1>
-        I am 
+        I AM A
         <i>
           <Typewriter
         onInit={(typewriter) => {
           typewriter
-            .typeString("a Passionate Coder")
+            .typeString("Passionate Coder")
             .pauseFor(2500)
               .deleteAll()
-              .typeString("a Quick Learner")
+              .typeString("Quick Learner")
             .pauseFor(2500)
               .deleteAll()
-              .typeString("a Tech Enthusiast")
+              .typeString("Tech Enthusiast")
             .pauseFor(2500)
             .deleteAll()
-            .typeString("a Believer")
+            .typeString("Believer")
             .pauseFor(2500)
             .deleteAll()
-            .typeString("a Team Player")
+            .typeString("Team Player")
             .pauseFor(2500)
             // .deleteAll()
                 .start()
