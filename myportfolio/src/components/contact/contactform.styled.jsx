@@ -1,16 +1,15 @@
 import styled from "styled-components";
 export const NameDiv = styled.div`
   position: relative;
-  /* border:2px solid black; */
-  width:250px
-  ;
-  margin:20px
-`
+  border: 2px solid white;
+  width: 250px;
+  margin: 20px;
+`;
 
 export const NameInput = styled.input`
   border: solid 1.5px #9e9e9e;
   border-radius: 1rem;
-    width:150px;
+  width: 150px;
   padding: 1rem;
   font-size: 1rem;
   color: #f5f5f5;
@@ -18,14 +17,13 @@ export const NameInput = styled.input`
 
   &:focus {
     outline: none;
-    border: 1.5px solid #1a73e8;
+    border: 1.5px solid #ffffff;
   }
   &:valid {
     outline: none;
-    border: 1.5px solid #1a73e8;
+    border: 1.5px solid #ffffff;
   }
 `;
-
 
 /* From uiverse.io by @adamgiebl */
 /* export const SubmitButton = styled.button`

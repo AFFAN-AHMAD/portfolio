@@ -1,20 +1,105 @@
 /* From uiverse.io by @alexruix */
 .input-group {
     position: relative;
-   }
-   
-   .input {
-    border: solid 1.5px black;
-    border-radius: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    box-sizing: border-box;
+}
+.form,
+.form-dark {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form-dark input {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.form textarea,
+.form-dark textarea {
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    /* background: none; */
+    font-size: 1rem;
+    /* color: #f5f5f5; */
+    /* transition: border 150ms cubic-bezier(0.4,0,0.2,1); */
+    padding: 1rem 0px 0px 1rem;
+    cursor: pointer;
+}
+
+.form input:focus,
+.form textarea:focus {
+    /* outline: none; */
+    border: 0.5px solid #b7b4b4;
+    /* color: black; */
+}
+
+
+.form-dark input,
+.form-dark textarea {
+    background-color: #f1e78e;
+    border: 1px solid #e9dd70;
+    /* color: #FFFFFF; */
+    color: black;
+}
+.form input,
+.form textarea {
+    background-color: #211f1f;
+    border: 1px solid #464646;
+    color: #FFFFFF;
+}
+
+
+
+.form-dark input:focus,
+.form-dark textarea:focus {
+    outline: 1px solid #f9e000;
+    border: 0.5px solid #b7b4b4;
+}
+
+.form input:focus,
+.form textarea:focus {
+   background-color: white;
+   color: black;
+    /* color: black; */
+}
+
+
+
+
+
+
+
+
+
+
+
+.input {
+    border: solid 1.5px #FFFFFF;
+    border-radius: 10px;
     background: none;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 1rem;
     color: #f5f5f5;
-    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
-    width:200px
-   }
-   
-   .user-label {
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 200px;
+}
+
+.user-label {
     position: absolute;
     /* margin:30px; */
     left: 45px;
@@ -22,25 +107,25 @@
     /* pointer-events: none; */
     transform: translateY(1rem);
     /* transition: 150ms cubic-bezier(0.4,0,0.2,1); */
-   }
-   
-   .input:focus, textarea:valid~label{
+}
+
+.input:focus {
     outline: none;
-    border: 1.5px solid #1a73e8;
-   }
-   /* textarea:valid~label{
-       display: none;
-   } */
-   
-   .input:focus ~ label, textarea:valid ~ label {
+    border: 1.5px solid #b7b4b4
+}
+
+textarea:valid~label {
+    outline: none;
+    border: 1.5px solid #FFFFFF
+}
+
+.input:focus~label,
+textarea:valid~label {
     transform: translateY(-50%) scale(0.8);
     background-color: #212121;
     padding: 0 .2em;
-    color: #2196f3;
-   }
+    color: #FFFFFF
+}
 
 
-   /* From uiverse.io by @adamgiebl */
-
-   
-   
+/* From uiverse.io by @adamgiebl */

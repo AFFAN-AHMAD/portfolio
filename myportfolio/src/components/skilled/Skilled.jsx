@@ -44,6 +44,9 @@ function Skilled(props) {
 					style={{
 						marginBottom: "-10px",
 						paddingBottom: "",
+						height: "350px",
+						width: "350px",
+						// border: '1px solid red'
 					}}
 					class="card-img"
 					src={require("../photo/new.jpg")}
