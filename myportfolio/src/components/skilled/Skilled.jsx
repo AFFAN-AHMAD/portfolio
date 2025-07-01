@@ -58,10 +58,9 @@ function Skilled(props) {
             <b>
               <i>Full Stack Web Developer</i>
             </b>{" "}
-            with 2.5 years of experience in web development. . Affan is a quick
+            with 2.5 years of experience in web development. Affan is a quick
             learner, enthusiastic person, a team player and passionate about
-            coding. He has worked on various projects some of them you can check
-            in the projects section.
+            coding.
           </h3>
         </div>
       </div>
