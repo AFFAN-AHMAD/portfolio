@@ -50,6 +50,90 @@ function Projects({ ref }) {
       <H1tag style={{ letterSpacing: "5px" }}>Projects</H1tag>
       {/* 1st project */}
 
+      <ProDiv onMouseEnter={handleHover1} onMouseLeave={handleHover1}>
+        <ImgDiv>
+          <ImgFrame src={require("./carRental.gif")} alt="abcd"></ImgFrame>
+        </ImgDiv>
+        <DetailsDiv>
+          <NameDiv theme={theme}>
+            <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
+              {" "}
+              Nykaa
+            </h5>
+          </NameDiv>
+          <DescDiv show={toshow1}>
+            <p>
+              CarRental is a car booking app where you can list your cars for
+              booking
+            </p>
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Features:
+              </h5>
+              <li>Sign-in/Sign-up</li>
+              <li>Dashboard</li>
+              <li>Manage cars, Manage bookings</li>
+              <li>List cars</li>
+              <li>User authentication</li>
+              {/* <li></li> */}
+            </ul>
+
+            <ul>
+              {" "}
+              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
+                Areas of responsibility:
+              </h5>
+              <li>Created a solo project </li>
+            </ul>
+            <h5>Inspired by Zoom Cars</h5>
+          </DescDiv>
+          <LinkDiv show={toshow1} theme={theme}>
+            {" "}
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
+              <Atag
+                theme={theme}
+                href="https://car-rental-project-by-affan.netlify.app/"
+                target="_blank"
+              >
+                <p> Live </p>
+                <p>
+                  {" "}
+                  <OpenInNewIcon style={{ fontSize: "medium" }} />
+                </p>
+              </Atag>{" "}
+            </p>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
+              {" "}
+              <Atag
+                theme={theme}
+                href="https://github.com/AFFAN-AHMAD/carRental-client"
+                target="_blank"
+              >
+                <p> frontend</p>
+                <p>
+                  {" "}
+                  <GitHubIcon style={{ fontSize: "medium" }} />
+                </p>{" "}
+              </Atag>
+            </p>
+            <p style={{ textAlign: "center", color: "whitesmoke" }}>
+              {" "}
+              <Atag
+                theme={theme}
+                href="https://github.com/AFFAN-AHMAD/carRental-server"
+                target="_blank"
+              >
+                <p> backend</p>
+                <p>
+                  {" "}
+                  <GitHubIcon style={{ fontSize: "medium" }} />
+                </p>{" "}
+              </Atag>
+            </p>
+          </LinkDiv>
+        </DetailsDiv>
+      </ProDiv>
       <ProDiv onMouseEnter={handleHover3} onMouseLeave={handleHover3}>
         <ImgDiv>
           <ImgFrame src={require("./nykaaClone.gif")} alt="abcd"></ImgFrame>

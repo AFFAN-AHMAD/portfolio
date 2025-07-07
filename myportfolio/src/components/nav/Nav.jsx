@@ -55,7 +55,7 @@ function Nav() {
           <ResDiv>
             <Atag
               theme={theme}
-              href="https://drive.google.com/file/d/1QCfXWTTUPTkzC0gvx7g2tm9H0VMWokfk/view"
+              href="https://drive.google.com/file/d/1PHRBsXj1mdUg0OW7NIJbBUfpQlmpVaT5/view?usp=sharing"
               target="_blank"
             >
               View CV
