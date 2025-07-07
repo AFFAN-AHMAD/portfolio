@@ -58,7 +58,7 @@ function Projects({ ref }) {
           <NameDiv theme={theme}>
             <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
               {" "}
-              Nykaa
+              Car Rental
             </h5>
           </NameDiv>
           <DescDiv show={toshow1}>
