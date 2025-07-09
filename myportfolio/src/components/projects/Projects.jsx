@@ -136,64 +136,33 @@ function Projects({ ref }) {
       </ProDiv>
       <ProDiv onMouseEnter={handleHover3} onMouseLeave={handleHover3}>
         <ImgDiv>
-          <ImgFrame src={require("./nykaaClone.gif")} alt="abcd"></ImgFrame>
+          <ImgFrame src={require("./realEstate.gif")} alt="abcd"></ImgFrame>
         </ImgDiv>
         <DetailsDiv>
           <NameDiv theme={theme}>
             <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
               {" "}
-              Nykaa
+              Real Estate Webaite
             </h5>
           </NameDiv>
           <DescDiv show={toshow3}>
-            <p>
-              Nykaa is a beauty and cosmetics website, currently leading Indian
-              markets.
-            </p>
+            <p>A place to find your destination</p>
             <ul>
               {" "}
               <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
                 Features:
               </h5>
-              <li>Sign-in/Sign-up</li>
-              <li>Cart | Products page | Products details page</li>
-              <li>Pagination | Sorting | Filtering</li>
-              <li>User authentication</li>
+              <li>Slider for Projects list</li>
+              <li>Contact form</li>
               {/* <li></li> */}
             </ul>
-
-            <ul>
-              {" "}
-              <h5 style={{ fontStyle: "italic", marginBottom: "5px" }}>
-                Areas of responsibility:
-              </h5>
-              <li>Lead the team </li>
-              <li>Created Products Page</li>
-              <li>
-                Implemented features such as pagination, sorting and filtering.
-              </li>
-              <li>Written a proper readme for a better user experience.</li>
-              <li>
-                Written a{" "}
-                <a
-                  href="https://medium.com/@affanahmad2797/algorithm-for-making-combinations-of-mongo-queries-using-javascript-map-method-d6470bc4a1f7"
-                  style={{ color: "white" }}
-                >
-                  blog
-                </a>{" "}
-                explaining the step by step procedure for making combination of
-                two sets of items.
-              </li>
-            </ul>
-            <p> Team of 4 members, executed it in 5 days.</p>
-            <h5>inspired by Nykaa</h5>
           </DescDiv>
           <LinkDiv show={toshow3} theme={theme}>
             {" "}
             <p style={{ textAlign: "center", color: "whitesmoke" }}>
               <Atag
                 theme={theme}
-                href="https://precious-kringle-4730a8.netlify.app/"
+                href="https://real-estate-project-by-affan.netlify.app/"
                 target="_blank"
               >
                 <p> Live </p>
@@ -207,7 +176,7 @@ function Projects({ ref }) {
               {" "}
               <Atag
                 theme={theme}
-                href="https://github.com/AFFAN-AHMAD/funny-week-7983"
+                href="https://github.com/AFFAN-AHMAD/real-estate"
                 target="_blank"
               >
                 <p> Github</p>
