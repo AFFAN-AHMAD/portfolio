@@ -142,7 +142,7 @@ function Projects({ ref }) {
           <NameDiv theme={theme}>
             <h5 style={{ margin: "5px 0px 0px 0px", fontStyle: "italic" }}>
               {" "}
-              Real Estate Webaite
+              Real Estate Website
             </h5>
           </NameDiv>
           <DescDiv show={toshow3}>
