@@ -154,7 +154,8 @@ function Projects({ ref }) {
               </h5>
               <li>Slider for Projects list</li>
               <li>Contact form</li>
-              {/* <li></li> */}
+              <li>Animation</li>
+              <li>A solo project to showcase frontend skills</li>
             </ul>
           </DescDiv>
           <LinkDiv show={toshow3} theme={theme}>
